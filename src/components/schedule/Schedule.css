@@ -1,0 +1,13 @@
+.Schedule > *{
+    border: 1px solid #000;
+}
+.Schedule > div > h1 {
+  font-family: "Gotham";
+  color: #2cb774;
+  font-size: 120px;
+}
+.Schedule > div {
+  width: 100%;
+  background-image: url("../../assets/schedule-gradiant.svg");
+  filter: blur();
+}
