@@ -1,0 +1,35 @@
+.header_arrow {
+  display: flex;
+  gap: 10px;
+}
+.arrow_background {
+  width: 40.5px;
+  height: 40.5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #191414;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 430px) {
+  .header_arrow {
+    gap: 5px;
+  }
+  .arrow_background {
+    width: 20.21px;
+    height: 20.21px;
+    filter: drop-shadow(0px 1.99559px 1.99559px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #191414;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow_background > img{
+    width: 10px;
+    height: 10px;
+  }
+}

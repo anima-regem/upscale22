@@ -1,41 +1,32 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gotham");
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.upscale_btn {
+  padding: 10px 25px;
+  background: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-family: "Gotham", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 19px;
+  transition: .2s;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.upscale_btn:hover{
+  background: #1ED760;
+  border: 2px solid #1ED760;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 430px) {
+  .upscale_btn {
+    font-size: 12px;
+    line-height: 11px;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

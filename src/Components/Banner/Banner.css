@@ -1,0 +1,150 @@
+.banner {
+  width: 100%;
+  background-color: #000;
+}
+.banner_body {
+  background-image: url(../../assets/images/earthBackground.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.banner_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.banner_logo > img {
+  margin-top: 170px;
+  height: 277px;
+}
+.banner_register_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.banner_details {
+  margin-top: 320px;
+}
+.banner_details > h1 {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65.0277px;
+  line-height: 62px;
+  color: #ffffff;
+}
+.banner_details > h1 > span {
+  color: #2cb774;
+}
+.banner_details > p {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  /* or 104% */
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: 0 0 120px 0;
+}
+.banner_collaborating {
+  margin-top: 285px;
+  display: flex;
+  flex-direction: column;
+}
+.banner_collaborating > h2 {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50.3936px;
+  line-height: 56px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin: 0;
+}
+.banner_collaborating > h1 {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 136.687px;
+  line-height: 131px;
+  /* identical to box height */
+  color: #2cb774;
+  margin: 0;
+}
+
+/* societies */
+.societies {
+  width: 100%;
+  height: fit-content;
+  background: rgba(255, 255, 255, 0.18);
+}
+.societies_logos {
+  height: 232px;
+  display: flex;
+  align-items: center;
+}
+/* societies */
+
+.banner_coundown {
+  margin-top: 361px;
+}
+
+@media (max-width: 430px) {
+  .banner_body {
+    background-image: url(../../assets/images/mobileEarthBackground.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .banner_details {
+    margin-top: 108px;
+  }
+  .banner_logo > img {
+    margin-top: 65px;
+    height: 130.41px;
+  }
+  .banner_register_btn {
+    margin-top: 35px;
+  }
+  .banner_collaborating {
+    margin-top: 105px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .banner_collaborating > h2 {
+    font-size: 21.1418px;
+    line-height: 20px;
+  }
+  .banner_collaborating > h1 {
+    font-size: 21.1418px;
+    line-height: 20px;
+    color: #2cb774;
+  }
+  .societie_logo > img {
+    width: 142.71px;
+    height: 60.81px;
+  }
+  .banner_details > h1 {
+    font-size: 21.1418px;
+  }
+  .banner_details > h1 > span {
+    color: #2cb774;
+  }
+  .banner_details > p {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 10px 0;
+    margin: -10px 0 30px 0;
+  }
+  .banner_details > button {
+    margin-left: 10px;
+  }
+  .banner_coundown {
+    margin-top: 72px;
+  }
+}
