@@ -1,0 +1,46 @@
+.Schedule {
+  width: 100%;
+  position: relative;
+}
+.Schedule > .hero-text {
+  padding-top: 10%;
+  display: none;
+}
+.Schedule > div > h1 {
+  width: 100%;
+  font-family: "Gotham";
+  font-weight: bolder;
+  color: #2cb774;
+  padding: 8%;
+  font-size: 7vw;
+  z-index: 10;
+  grid-column: 1;
+  grid-row: 1;
+}
+.Schedule > .hero-text > div {
+  background-color: #2cb77428;
+  border-radius: 60%;
+
+  grid-row: 1;
+  grid-column: 1;
+  filter: blur(500px);
+  z-index: 1;
+}
+
+.Schedule > div > .desktop {
+  display: none;
+}
+
+@media (orientation: landscape), (min-width: 640px) {
+  .Schedule > div > .desktop {
+    display: block;
+  }
+
+  .Schedule > .hero-text {
+    display: grid;
+    padding-top: 10%;
+  }
+  .Schedule > div > .mobile {
+    display: none;
+  }
+}

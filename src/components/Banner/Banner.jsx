@@ -1,13 +1,13 @@
 import React from "react";
-import "../Banner/Banner.css";
+import "./Banner.css";
 import Navbar from "../Navbar/Navbar";
 
 // logos
 import BigLogo from "../../assets/images/bigLogo.svg";
-import IeeeLogo from "../../assets/images/IeeeLogo.png";
+import IeeeLogo from "../../assets/images/ieeeLogo.png";
 import IedcLogo from "../../assets/images/Iedc.png";
-import KsmLogo from "../../assets/images/KsmLogo.png";
-import TbiLogo from "../../assets/images/TbiLogo.png";
+import KsmLogo from "../../assets/images/ksmLogo.png";
+import TbiLogo from "../../assets/images/tbiLogo.png";
 import Coundown from "../Coundown/Coundown";
 
 import bgEarth from "../../assets/images/roundEarth.svg";
