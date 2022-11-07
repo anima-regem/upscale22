@@ -1,0 +1,125 @@
+.blur {
+  position: absolute;
+  top: 610px;
+  left: -100px;
+  width: 781px;
+  height: 248.9px;
+  background: rgba(44, 183, 116, 0.6);
+  filter: blur(250px);
+}
+.webinar_div {
+  padding: 50px;
+}
+.webinar_img {
+  width: 421px;
+  height: 487.9px;
+  object-fit: cover;
+}
+.webinar {
+  position: relative;
+  width: 100%;
+  height: 1882px;
+  background-color: #000;
+}
+.webinar_details {
+  margin-top: 70px;
+  border-left: 23px solid #1ed760;
+  padding-left: 10px;
+}
+.webinar_details2 {
+  margin: 0 60px 50px;
+  border-left: 23px solid #1ed760;
+  padding-left: 10px;
+}
+.webinar_details > h1,
+.webinar_details2 > h1 {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  color: #ffffff;
+}
+.webinar_details > p,
+.webinar_details2 > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.webinar_main_img_section {
+  position: relative;
+  display: flex;
+}
+.webinar_main_img_section > img {
+  width: 746px;
+  height: 464px;
+  object-fit: cover;
+}
+.webinar_main_img_section > h1 {
+  position: absolute;
+  top: 230px;
+  left: -280px;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 146.066px;
+  line-height: 161px;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 430px) {
+  .blur {
+    top: 250px;
+    left: -40px;
+    width: 168.36px;
+    height: 53.66px;
+    background: rgba(44, 183, 116, 0.6);
+    filter: blur(53.8939px);
+  }
+  .webinar_div {
+    padding: 15px;
+  }
+  .webinar_img {
+    width: 138px;
+    height: 160px;
+    object-fit: cover;
+  }
+  .webinar_details {
+    margin-top: 23px;
+    border-left: 6px solid #1ed760;
+    padding-left: 7px;
+  }
+  .webinar_details2 {
+    margin: 0;
+    border-left: 6px solid #1ed760;
+    padding-left: 10px;
+  }
+  .webinar_details > h1,
+  .webinar_details2 > h1 {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .webinar_details > p,
+  .webinar_details2 > p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .webinar_main_img_section > img {
+    margin-top: 35px;
+    width: 183.09px;
+    height: 113.88px;
+    object-fit: cover;
+  }
+  .webinar_main_img_section > h1 {
+    top: 75px;
+    left: -70px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 37px;
+  }
+}
