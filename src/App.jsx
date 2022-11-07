@@ -1,16 +1,18 @@
 import React from "react";
-import Banner from "./Components/Banner/Banner";
+import Banner from "./components/Banner/Banner";
 import "./App.css";
-import Footer from "./Components/Footer/Footer";
+import Schedule from './components/schedule/Schedule'
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
-    <>
-      <Banner />
-      {/* <Webinar/> */}
-        <Footer/>
-    </>
-  );
+
+      <div className="App">
+          <Banner/>
+          <Schedule/>
+          <Footer/>
+      </div>
+    );
 }
 
 export default App;
