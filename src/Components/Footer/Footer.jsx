@@ -6,14 +6,14 @@ import linkedinLogo from '../../assets/icons/linkedin.svg'
 import logoCopy from '../../assets/icons/logo_u.svg'
 
 const Footer = () => {
-    const [copySuccess, setCopySuccess] = useState('')
+    const [copyStatus, setCopyStatus] = useState('Click to copy the link')
 
     const copy = async text => {
         try {
             await navigator.clipboard.writeText(text)
-            setCopySuccess('Copied!')
+            setCopyStatus('Copied!')
         } catch (e) {
-            setCopySuccess('Failed')
+            setCopyStatus('Failed to copy')
         }
     }
 
@@ -22,26 +22,27 @@ const Footer = () => {
         <>
             <footer className='section footer__container'>
                 <section className='footer__useful-links'>
-                    <h4>USEFUL LINKS</h4>
+                    <h4 className='footer__heading footer__heading__useful'>USEFUL LINKS</h4>
                     <ul className='footer__list_container'>
                         <li className='footer__useful__link'>
                             <a className='footer__link'
-                               href="https://www.instagram.com/ieeesbgecpkd/?igshid=YmMyMTA2M2Y%3D">
+                               href="https://www.instagram.com/ieeesbgecpkd/" target='_blank'>
                                 @ieeesbgecpkd
                             </a>
                         </li>
                         <li className='footer__useful__link'>
-                            <a className='footer__link' href="https://linkedin.com/company/ieeesbgecpkd">
+                            <a className='footer__link' href="https://linkedin.com/company/ieeesbgecpkd"
+                               target='_blank'>
                                 ieeesbgecpkd
                             </a>
                         </li>
                         <li className='footer__useful__link'>
-                            <a className='footer__link' href="https://ieee.org">IEEE</a>
+                            <a className='footer__link' href="https://ieee.org" target='_blank'>IEEE</a>
                         </li>
                     </ul>
                 </section>
                 <section className='section footer__contact'>
-                    <h4>CONTACT US</h4>
+                    <h4 className='footer__heading'>CONTACT US</h4>
                     <ul className='footer__link__container'>
                         <li>
                             <a className='footer__link' href="tel:+919495951143">Sanju: +91 9495951143</a>
@@ -50,25 +51,25 @@ const Footer = () => {
                             <a className='footer__link' href="tel:+919895645290">Thamna: +91 9895645290</a>
                         </li>
                         <li>
-                            <a className='footer__link' href="mailto:ieee@gecskp.ac.in">Email: ieee@gecskp.ac.in</a>
+                            <a className='footer__link' href="mailto:ieee@gecskp.ac.in" target='_blank'>Email: ieee@gecskp.ac.in</a>
                         </li>
                     </ul>
                 </section>
                 <section className='section footer__about'>
-                    <h4>ABOUT IEEE SB GEC PKD</h4>
-                    <p>
+                    <h4 className='footer__heading'>ABOUT IEEE SB GEC PKD</h4>
+                    <p className='footer__about__para'>
                         The IEEE Student Branch of Government Engineering College Palakkad, We work for providing an
                         ideal platform for young minds to nourish their technical skills as an engineer by providing a
                         technical home.The SB has has actively working IAS , ComSoc and Computer Society and also WiE
-                        affinity group
+                        affinity group.
                     </p>
                 </section>
                 <section className='section footer__end'>
                     <p>
                         Copyright &copy; 2022 IEEE SB GECPKD. All Rights Reserved
                     </p>
-                    <div className='footer__logo'>
-                        <a className='clip' onClick={() => copy('page_link_here')}>
+                    <div className='footer__socials'>
+                        <a className='clip' onClick={() => copy('page_link_here')} data-copy-status={ copyStatus }>
                             <img src={logoCopy} alt="logo_u"/>
                         </a>
                         <a href="https://www.instagram.com/ieeesbgecpkd/" target='_blank'>
