@@ -2,6 +2,15 @@
   width: 100%;
   background-color: #000;
 }
+/* .banner_societies_blur {
+  position: relative;
+  width: 185px;
+  height: 52.59px;
+  top: 100%;
+
+  background: rgba(44, 183, 116, 0.6);
+  filter: blur(59.2189px);
+} */
 .banner_body {
   background-image: url(../../assets/images/earthBackground.svg);
   width: 100%;
@@ -88,10 +97,58 @@
   display: flex;
   align-items: center;
 }
+
 /* societies */
 
 .banner_coundown {
   margin-top: 361px;
+}
+@media (max-width: 1176px) {
+  .banner_logo > img {
+    margin-top: 100px;
+    height: 200px;
+  }
+}
+@media (max-width: 900px) {
+  .banner_coundown {
+    margin-top: 170px;
+  }
+  .banner_details > h1 {
+    font-size: 55px;
+    line-height: 62px;
+  }
+  .banner_details > p {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 0 90px 0;
+  }
+  .banner_collaborating {
+    margin-top: 200px;
+  }
+  .banner_collaborating > h2 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .banner_collaborating > h1 {
+    font-size: 100px;
+    line-height: 131px;
+  }
+  .societie_logo > img {
+    width: 180px;
+  }
+}
+@media (max-width: 568px) {
+  .banner_collaborating {
+    margin-top: 200px;
+  }
+  .banner_collaborating > h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .banner_collaborating > h1 {
+    font-size: 75px;
+    line-height: 100px;
+  }
 }
 
 @media (max-width: 430px) {

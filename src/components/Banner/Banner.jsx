@@ -10,7 +10,7 @@ import KsmLogo from "../../assets/images/ksmLogo.png";
 import TbiLogo from "../../assets/images/tbiLogo.png";
 import Coundown from "../Coundown/Coundown";
 
-import bgEarth from "../../assets/images/roundEarth.svg";
+import WebinarCard from "../WebinarCard/WebinarCard";
 
 const Banner = () => {
   return (
@@ -20,7 +20,6 @@ const Banner = () => {
           <Navbar />
           <div className="banner_body">
             <div className="background_img">
-                            
               <div className="banner_logo">
                 <img src={BigLogo} alt="Logo" />
               </div>
@@ -49,9 +48,11 @@ const Banner = () => {
                     <Coundown />
                   </div>
                   <div className="col-lg-6 col-12">
-                    <div className="banner_collaborating">
-                      <h2>COLLABORATING</h2>
-                      <h1>SOCIETIES</h1>
+                    <div className="row">
+                        <div className="col-lg-6 col-12 banner_collaborating">
+                          <h2>COLLABORATING</h2>
+                          <h1>SOCIETIES</h1>
+                        </div>
                     </div>
                   </div>
                 </div>
