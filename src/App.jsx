@@ -7,6 +7,7 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import WebinarPage from "./Pages/WebinarPage";
+import TicketPage from "./Pages/TicketPage";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/webinar" element={<WebinarPage/>} />
+          <Route path="/tickets" element={<TicketPage/>} />
 
         </Routes>
       </BrowserRouter>
