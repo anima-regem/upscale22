@@ -1,6 +1,6 @@
 import React from "react";
 import WebinarCard from "../WebinarCard/WebinarCard";
-import "../WebinarSection/WebinarSection.css";
+import "./WebinarSection.css";
 
 const WebinarSection = () => {
   return (
