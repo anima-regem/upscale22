@@ -1,0 +1,41 @@
+.KnowMore {
+
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10%;
+  z-index: 9;
+}
+
+.KnowMore > #aboutDesktop {
+  display: none;
+}
+.KnowMore > #recallDesktop {
+  display: none;
+}
+.KnowMore > #aboutMobile {
+  display: block;
+  margin-right: 5%;
+  margin-top: -10%;
+}
+.KnowMore > #recallMobile {
+  display: block;
+  margin-left: 5%;
+  margin-top: -15%;
+}
+@media (orientation: landscape), (min-width: 640px) {
+  .KnowMore > #aboutDesktop {
+    display: block;
+    margin-right: 10%;
+  }
+  .KnowMore > #recallDesktop {
+    display: block;
+    margin-left: 10%;
+    margin-top: -25%;
+  }
+  .KnowMore > #aboutMobile {
+    display: none;
+  }
+  .KnowMore > #recallMobile {
+    display: none;
+  }
+}
