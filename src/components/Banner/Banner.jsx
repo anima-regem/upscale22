@@ -17,7 +17,7 @@ const Banner = () => {
     <>
       <main>
         <div className="banner">
-          <Navbar />
+          {/* <Navbar /> */}
           <div className="banner_body">
             <div className="background_img">
                             
