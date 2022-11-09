@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../Navbar/Navbar.css";
 import logo from "../../assets/images/logo.svg";
-import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
-
+import { NavHashLink } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -14,12 +13,6 @@ const Navbar = () => {
   const handleScroll = () =>  setSticky(window.scrollY > 200)
   const handleClick = () => setClicked(!clicked);
   const toggleClass = () => setOpened(!opened);
-  const goToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: smooth
-    })
-  }
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -47,13 +40,14 @@ const Navbar = () => {
         <nav className="navbar__container">
           <div className="navbar__link__container" data-visibility = { clicked }>
             <div className=" items">
-              <HashLink smooth className="navbar__nav__el" to="/#home">HOME</HashLink>
-              <HashLink smooth className="navbar__nav__el" to="/#footer">ABOUT</HashLink>
-              <HashLink smooth className="navbar__nav__el" to="/#schedule">SCHEDULE</HashLink>
-              <HashLink smooth className="navbar__nav__el" to="#">SPEAKERS</HashLink>
-              <HashLink smooth className="navbar__nav__el" to="/#footer">CONTACT</HashLink>
-              <HashLink smooth className="navbar__nav__el mobile_only" to="/#faq" offset={-85}>FAQ</HashLink>
-              <HashLink smooth className="navbar__nav__el mobile_only" to="/#footer">TEAM & ENQUIRY</HashLink>
+              {/* TODO: Fix the issue active class is not applying when scrolled into.*/}
+              <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li" to="/#home">HOME</NavHashLink>
+              <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li" to="/#footer">ABOUT</NavHashLink>
+              <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li" to="/#schedule">SCHEDULE</NavHashLink>
+              <NavLink className="navbar__nav__el" activeClassName="active_li" to="">SPEAKERS</NavLink>
+              <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li" to="/#footer">CONTACT</NavHashLink>
+              <NavHashLink smooth className="navbar__nav__el mobile_only" activeClassName="active_li" to="/#faq">FAQ</NavHashLink>
+              <NavHashLink smooth className="navbar__nav__el mobile_only" activeClassName="active_li" to="/#footer">TEAM & ENQUIRY</NavHashLink>
             </div>
           </div>
         </nav>
