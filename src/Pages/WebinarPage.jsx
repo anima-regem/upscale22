@@ -1,12 +1,12 @@
-import React from 'react'
-import Webinar from '../Components/Webinar/Webinar'
+import React from "react";
+import Webinar from "../components/Webinar/Webinar";
 
 const WebinarPage = () => {
   return (
     <div>
-        <Webinar/>
+      <Webinar />
     </div>
-  )
-}
+  );
+};
 
-export default WebinarPage
+export default WebinarPage;
