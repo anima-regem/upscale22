@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&display=swap");
 @import url("https://fonts.cdnfonts.com/css/gotham");
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,6 +12,7 @@
 
 body {
   background-color: #000;
+  -webkit-font-smoothing: antialiased;
 }
 
 .upscale_btn {
