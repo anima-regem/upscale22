@@ -20,7 +20,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className='section footer__container'>
+            <footer className='section footer__container' id='footer'>
                 <section className='footer__useful-links'>
                     <h4 className='footer__heading footer__heading__useful'>USEFUL LINKS</h4>
                     <ul className='footer__list_container'>

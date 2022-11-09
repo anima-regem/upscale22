@@ -43,6 +43,10 @@ header {
 .navbar__nav__el {
   position: relative;
   padding: 0 0.3rem;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .navbar__nav__el::after {
@@ -64,16 +68,10 @@ header {
   width: 100%;
 }
 
-.navbar__nav__el:link,
-.navbar__nav__el:visited {
-  text-decoration: none;
-  color: #fff;
-  opacity: 0.5;
-}
-
 .navbar__nav__el:hover,
 .navbar__nav__el:active {
   opacity: 1;
+  color: #fff;
 }
 
 /* mobile */

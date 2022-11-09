@@ -8,9 +8,10 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #000;
 }
+
 .upscale_btn {
   padding: 10px 25px;
   background: none;
@@ -24,17 +25,24 @@ body{
   line-height: 19px;
   transition: .2s;
 }
-.upscale_btn:hover{
+
+.upscale_btn:hover {
   background: #1ED760;
   border: 2px solid #1ED760;
 }
+
 @media (max-width: 430px) {
   .upscale_btn {
     font-size: 12px;
     line-height: 11px;
   }
 }
-.App{
+
+.App {
   background-color: #000;
 
+}
+
+html {
+  scroll-behavior: smooth;
 }

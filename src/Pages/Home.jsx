@@ -9,7 +9,7 @@ import WebinarSection from "../components/WebinarSection/WebinarSection";
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <Navbar />
       <Banner />
       <Schedule />

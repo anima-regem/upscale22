@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../Navbar/Navbar.css";
 import logo from "../../assets/images/logo.svg";
+import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 
 const Navbar = () => {
@@ -12,6 +14,12 @@ const Navbar = () => {
   const handleScroll = () =>  setSticky(window.scrollY > 200)
   const handleClick = () => setClicked(!clicked);
   const toggleClass = () => setOpened(!opened);
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: smooth
+    })
+  }
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -39,13 +47,13 @@ const Navbar = () => {
         <nav className="navbar__container">
           <div className="navbar__link__container" data-visibility = { clicked }>
             <div className=" items">
-              <a className="navbar__nav__el" href="#">HOME</a>
-              <a className="navbar__nav__el" href="#footer">ABOUT</a>
-              <a className="navbar__nav__el" href="#schedule">SCHEDULE</a>
-              <a className="navbar__nav__el" href="#">SPEAKERS</a>
-              <a className="navbar__nav__el" href="#contact">CONTACT</a>
-              <a className="navbar__nav__el mobile_only" href="#contact">FAQ</a>
-              <a className="navbar__nav__el mobile_only" href="#contact">TEAM & ENQUIRY</a>
+              <HashLink smooth className="navbar__nav__el" to="/#home">HOME</HashLink>
+              <HashLink smooth className="navbar__nav__el" to="/#footer">ABOUT</HashLink>
+              <HashLink smooth className="navbar__nav__el" to="/#schedule">SCHEDULE</HashLink>
+              <HashLink smooth className="navbar__nav__el" to="#">SPEAKERS</HashLink>
+              <HashLink smooth className="navbar__nav__el" to="/#footer">CONTACT</HashLink>
+              <HashLink smooth className="navbar__nav__el mobile_only" to="/#faq" offset={-85}>FAQ</HashLink>
+              <HashLink smooth className="navbar__nav__el mobile_only" to="/#footer">TEAM & ENQUIRY</HashLink>
             </div>
           </div>
         </nav>
