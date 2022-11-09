@@ -1,5 +1,5 @@
 import React from "react";
-import Webinar from "../components/Webinar/Webinar";
+import Webinar from "./../Components/Webinar/Webinar";
 
 const WebinarPage = () => {
   return (
