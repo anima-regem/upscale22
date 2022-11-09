@@ -1,8 +1,8 @@
 .faq {
-  /*font-family: "Gowtham";*/
-  background-color: black;
-  color: white;
-  position: relative;
+    font-family: "Gotham";
+    background-color: black;
+    color: white;
+    position: relative;
 }
 
 .faq_head {
@@ -47,7 +47,8 @@
   .faq {
     font-size: 0.6rem;
   }
-  .faq_question,
+
+    .faq_question,
   .faq_answer {
     width: 40vw;
     line-height: 1.2;
