@@ -1,10 +1,18 @@
-import React from "react";
+import React,{useEffect} from "react";
 import HeaderArrow from "../HeaderArrow/HeaderArrow";
 import "../Webinar/Webinar.css";
 import webinarImg from "../../assets/images/webinarImg.png";
 import webinarImg2 from "../../assets/images/webinarImg2.png";
+import { useContext } from "react";
+import { WebinarContext } from "../../context/WebinarContext";
+
+// import webinarData from '../../json/webinar_data.json'
 
 const Webinar = () => {
+
+  const { webinarData, setWebinarData } = useContext(WebinarContext);
+  console.log(webinarData)
+
   return (
     <>
       <div className="webinar">
@@ -15,27 +23,25 @@ const Webinar = () => {
             </div>
 
             <div className="col-lg-5 col-md-5 col-5 webinar_div">
-              <img className="webinar_img" src={webinarImg} alt="" />
+              <img className="webinar_img" src={webinarData.img2} alt="" />
               <div className="webinar_details">
-                <h1>Heading 2</h1>
+                <h1>{webinarData.heading2}</h1>
+                {/* {console.log(webinarData.heading2)} */}
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  {webinarData.para2}
                 </p>
               </div>
             </div>
             <div className="col-lg-7 col-md-7 col-7">
               <div className="webinar_details2">
-                <h1>How to pitch an idea?</h1>
+                <h1>{webinarData.heading1}</h1>
                 <p>
-                  Fascinated to solve real-life problems? Do you find it hard to
-                  come up with a perfect solution to a real-life problem and
-                  turn it into a viable business idea? Then here we go...
+                  {webinarData.para1}
                 </p>
               </div>
 
               <div className="webinar_main_img_section">
-                <img src={webinarImg2} alt="" />
+                <img src={webinarData.mainImg} alt="" />
                 <h1>Webinar</h1>
               </div>
             </div>

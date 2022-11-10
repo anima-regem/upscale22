@@ -7,6 +7,7 @@
 }
 
 footer {
+    margin-top: 70px;
     padding: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -167,6 +168,12 @@ ul {
         -moz-transform: translate(-20%, -100%);
         -ms-transform: translate(-20%, -100%);
         -o-transform: translate(-20%, -100%);
+    }
+}
+
+@media (max-width: 430px) {
+    footer{
+        margin-top: 50px;
     }
 }
 
