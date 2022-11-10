@@ -7,16 +7,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import WebinarPage from "./Pages/WebinarPage";
 import TicketPage from "./Pages/TicketPage";
+import KnowMore from "./Pages/KnowMore";
+import webinarData from "./Data/Webinar.json";
+import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path={"/webinar"} element={<WebinarPage />} />
-          <Route path="/tickets" element={<TicketPage />} />
-        </Routes>
+        <AnimatedRoutes />
       </BrowserRouter>
     </>
   );

@@ -5,7 +5,10 @@ const WebinarCard = ({ image, heading1, heading2 }) => {
   return (
     <div className="webinar_card">
       <div className="webinar_card_section">
-        <img src={image} alt="webinar Image" />
+        <div>
+          <div className="webinar_card_gradient"></div>
+          <img src={image} alt="webinar Image" />
+        </div>
         <h1>{heading1}</h1>
         <h2>{heading2}</h2>
       </div>

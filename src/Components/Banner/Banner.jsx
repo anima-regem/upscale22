@@ -9,13 +9,13 @@ import KsmLogo from "../../assets/images/ksmLogo.png";
 import TbiLogo from "../../assets/images/tbiLogo.png";
 import ieeeMalabar from "../../assets/images/ieeeMalabar.svg";
 import Coundown from "../Coundown/Coundown";
+import Footer from "../Footer/Footer";
 
 const Banner = () => {
   return (
     <>
       <main>
         <div className="banner">
-          {/* <Navbar /> */}
           <div className="banner_body">
             <div className="background_img">
               <div className="banner_logo">

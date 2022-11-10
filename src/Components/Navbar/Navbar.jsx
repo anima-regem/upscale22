@@ -1,8 +1,12 @@
+/*
+FIX:
+[] Incorrect scroll destination when clicked from another page.
+*/
 import React, { useEffect, useState } from "react";
 import "../Navbar/Navbar.css";
 import logo from "../../assets/images/logo.svg";
 import { NavHashLink } from "react-router-hash-link";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -12,6 +16,12 @@ const Navbar = () => {
   const handleScroll = () => setSticky(window.scrollY > 200);
   const handleClick = () => setClicked(!clicked);
   const toggleClass = () => setOpened(!opened);
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -80;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -61,30 +71,26 @@ const Navbar = () => {
                 smooth
                 className="navbar__nav__el"
                 activeClassName="active_li"
-                to="/#home"
+                to="/#top"
               >
                 HOME
               </NavHashLink>
-              <NavHashLink
-                smooth
-                className="navbar__nav__el"
-                activeClassName="active_li"
-                to="/#footer"
-              >
+              <Link className="navbar__nav__el" to="/know-more">
                 ABOUT
-              </NavHashLink>
+              </Link>
               <NavHashLink
                 smooth
                 className="navbar__nav__el"
                 activeClassName="active_li"
                 to="/#schedule"
+                scroll={scrollWithOffset}
               >
                 SCHEDULE
               </NavHashLink>
               <NavLink
                 className="navbar__nav__el"
                 activeClassName="active_li"
-                to=""
+                to="/know-more"
               >
                 SPEAKERS
               </NavLink>
@@ -92,7 +98,7 @@ const Navbar = () => {
                 smooth
                 className="navbar__nav__el"
                 activeClassName="active_li"
-                to="/#footer"
+                to="#footer"
               >
                 CONTACT
               </NavHashLink>
@@ -101,6 +107,7 @@ const Navbar = () => {
                 className="navbar__nav__el mobile_only"
                 activeClassName="active_li"
                 to="/#faq"
+                scroll={scrollWithOffset}
               >
                 FAQ
               </NavHashLink>
@@ -108,7 +115,7 @@ const Navbar = () => {
                 smooth
                 className="navbar__nav__el mobile_only"
                 activeClassName="active_li"
-                to="/#footer"
+                to="#footer"
               >
                 TEAM & ENQUIRY
               </NavHashLink>

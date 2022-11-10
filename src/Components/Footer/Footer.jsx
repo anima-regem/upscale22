@@ -12,14 +12,16 @@ const Footer = () => {
     try {
       await navigator.clipboard.writeText(text);
       setCopyStatus("Copied!");
+      setTimeout(() => setCopyStatus(null), 2000);
     } catch (e) {
       setCopyStatus("Failed to copy");
+      setTimeout(() => setCopyStatus(null), 2000);
     }
   };
 
   return (
     <>
-      <footer className="section footer__container">
+      <footer className="section footer__container" id="footer">
         <section className="footer__useful-links">
           <h4 className="footer__heading footer__heading__useful">
             USEFUL LINKS
@@ -93,7 +95,9 @@ const Footer = () => {
           <div className="footer__socials">
             <a
               className="clip"
-              onClick={() => copy("page_link_here")}
+              onClick={() => {
+                copy("https://upscale22.vercel.app/");
+              }}
               data-copy-status={copyStatus}
             >
               <img src={logoCopy} alt="logo_u" />
