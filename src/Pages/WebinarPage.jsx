@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
-import Webinar from "../components/Webinar/Webinar";
+import Navbar from "../Components/Navbar/Navbar";
+import Webinar from "../Components/Webinar/Webinar";
 
 const WebinarPage = () => {
     return (
