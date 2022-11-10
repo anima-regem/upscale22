@@ -1,7 +1,7 @@
 import React from 'react'
 import './SpeakerSection.css'
 import Card from '../Card/Card'
-import user from '../../assets/images/webinarimg.png'
+import user from '../../assets/images/webinarImg.png'
 
 function SpeakerSection() {
     return (
