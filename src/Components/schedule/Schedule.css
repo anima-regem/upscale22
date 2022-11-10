@@ -1,6 +1,7 @@
 .Schedule {
   width: 100%;
   position: relative;
+  margin-bottom: 10%;
 }
 .Schedule > .hero-text {
   padding-top: 10%;
