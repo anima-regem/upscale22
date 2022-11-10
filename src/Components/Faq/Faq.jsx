@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const Faq = () => {
   return (
-    <Container className="faq py-4" id="faq">
+    <Container className="faq py-4 faq__container" id="faq">
       <h1 className="faq_heading">
         FREQUENTLY ASKED <br /> <span className="faq_head">QUESTIONS?</span>
       </h1>
