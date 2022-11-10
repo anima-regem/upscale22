@@ -1,11 +1,9 @@
 import React from "react";
 import HeaderArrow from "../HeaderArrow/HeaderArrow";
 import "../Webinar/Webinar.css";
-import webinarImg from "../../assets/images/webinarImg.png";
-import webinarImg2 from "../../assets/images/webinarImg2.png";
 import { Navigate } from "react-router-dom";
 
-const Webinar = ({ webinar }) => {
+const Webinar = ({ webinar, index, max }) => {
   if (webinar === undefined) return <Navigate to="/" />;
   return (
     <div className="webinar">
@@ -13,7 +11,7 @@ const Webinar = ({ webinar }) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 pt-5">
-            <HeaderArrow />
+            <HeaderArrow index={index} max={max} />
           </div>
 
           <div className="col-lg-5 col-md-5 col-5 webinar_div">

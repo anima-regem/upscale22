@@ -9,7 +9,7 @@ const WebinarPage = ({ webinars }) => {
   return (
     <div>
       <Navbar />
-      <Webinar webinar={webinars[index]} />
+      <Webinar webinar={webinars[index]} index={index} max={webinars?.length} />
     </div>
   );
 };
