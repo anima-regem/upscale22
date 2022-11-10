@@ -1,6 +1,5 @@
 import React from "react";
 import "./Banner.css";
-import Navbar from "../Navbar/Navbar";
 
 // logos
 import BigLogo from "../../assets/images/bigLogo.svg";
@@ -10,14 +9,12 @@ import KsmLogo from "../../assets/images/ksmLogo.png";
 import TbiLogo from "../../assets/images/tbiLogo.png";
 import Coundown from "../Coundown/Coundown";
 
-import WebinarCard from "../WebinarCard/WebinarCard";
-
 const Banner = () => {
   return (
     <>
       <main>
         <div className="banner">
-          <Navbar />
+          {/* <Navbar /> */}
           <div className="banner_body">
             <div className="background_img">
               <div className="banner_logo">

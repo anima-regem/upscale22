@@ -1,19 +1,19 @@
 import "./Faq.css";
-import { Col, Container, Row } from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 
 const Faq = () => {
   return (
-    <Container className="faq py-4">
-      <h1 className="faq_heading">
-        FREQUENTLY ASKED <br /> <span className="faq_head">QUESTIONS?</span>
-      </h1>
-      <Row>
-        <Question question="Who can participate in the event?" />
-        <Answer
-          extraClass="faq_firstblob"
-          answer="If you want to be a budding entrepreneur? then you ended up in the right place.
+      <Container className="faq py-4" id="faq">
+          <h1 className="faq_heading">
+              FREQUENTLY ASKED <br/> <span className="faq_head">QUESTIONS?</span>
+          </h1>
+          <Row>
+              <Question question="Who can participate in the event?"/>
+              <Answer
+                  extraClass="faq_firstblob"
+                  answer="If you want to be a budding entrepreneur? then you ended up in the right place.
 There are no certain criteria, those who are interested in entrepreneurship can participate."
-        />
+              />
         <Answer
           extraClass="faq_secondblob"
           answer="Yes, there is an option only for individual enrollment. But once after enrolling you can participate individually or as a group as per your choice. We have provided the details of the registration fee packages declared."

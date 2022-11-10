@@ -1,12 +1,14 @@
 import React from "react";
-import Webinar from "./../Components/Webinar/Webinar";
+import Navbar from "../components/Navbar/Navbar";
+import Webinar from "../components/Webinar/Webinar";
 
 const WebinarPage = () => {
-  return (
-    <div>
-      <Webinar />
-    </div>
-  );
+    return (
+        <div>
+            <Navbar/>
+            <Webinar/>
+        </div>
+    );
 };
 
 export default WebinarPage;
