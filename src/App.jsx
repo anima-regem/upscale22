@@ -5,6 +5,8 @@ import Home from "./Pages/Home";
 import WebinarPage from "./Pages/WebinarPage";
 import KnowMore from "./Pages/KnowMore";
 import webinarData from "./Data/Webinar.json";
+import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
+
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
           />
           <Route path="/know-more" element={<KnowMore />} />
         </Routes>
+         <AnimatedRoutes />
       </BrowserRouter>
     </>
   );
