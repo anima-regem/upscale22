@@ -32,6 +32,7 @@ const Webinar = ({ webinar, index, max }) => {
             </div>
 
             <div className="webinar_main_img_section">
+              <div className="webinar_gradient"></div>
               <img src={webinar.img2} alt="" />
               <h1>Webinar</h1>
             </div>

@@ -7,14 +7,15 @@ import IeeeLogo from "../../assets/images/ieeeLogo.png";
 import IedcLogo from "../../assets/images/Iedc.png";
 import KsmLogo from "../../assets/images/ksmLogo.png";
 import TbiLogo from "../../assets/images/tbiLogo.png";
+import ieeeMalabar from "../../assets/images/ieeeMalabar.svg";
 import Coundown from "../Coundown/Coundown";
+import Footer from "../Footer/Footer";
 
 const Banner = () => {
   return (
     <>
       <main>
         <div className="banner">
-          {/* <Navbar /> */}
           <div className="banner_body">
             <div className="background_img">
               <div className="banner_logo">
@@ -23,7 +24,6 @@ const Banner = () => {
               <div className="banner_register_btn">
                 <button className="upscale_btn">Register</button>
               </div>
-
               <div className="container">
                 <div className="row">
                   <div className="col-lg-6"></div>
@@ -37,19 +37,21 @@ const Banner = () => {
                       exposure of the participants to different dimensions of
                       entrepreneurship and start-up ideas. Shaping young minds
                       to become efficient and professional entrepreneurs through
-                      a week long program.
+                      a week long program.
                     </p>
-                    <button className="upscale_btn">Learn more</button>
+                    <div className="learn_more_btn">
+                      <button className="upscale_btn">Learn more</button>
+                    </div>
                   </div>
                   <div className="col-lg-12 banner_coundown">
                     <Coundown />
                   </div>
                   <div className="col-lg-6 col-12">
                     <div className="row">
-                        <div className="col-lg-6 col-12 banner_collaborating">
-                          <h2>COLLABORATING</h2>
-                          <h1>SOCIETIES</h1>
-                        </div>
+                      <div className="col-lg-6 col-12 banner_collaborating">
+                        <h2>COLLABORATING</h2>
+                        <h1>SOCIETIES</h1>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -59,15 +61,18 @@ const Banner = () => {
                 <div className="container">
                   <div className="row societies_logos">
                     <div className="col-lg-3 col-md-6 col-6 societie_logo">
+                      <img src={ieeeMalabar} alt="" />
+                    </div>
+                    <div className="col-lg-2 col-md-6 col-6 societie_logo">
                       <img src={IeeeLogo} alt="" />
                     </div>
                     <div className="col-lg-3 col-md-6 col-6 societie_logo">
                       <img src={IedcLogo} alt="" />
                     </div>
-                    <div className="col-lg-3 col-md-6 col-6 societie_logo">
+                    <div className="col-lg-2 col-md-6 col-6 societie_logo">
                       <img src={KsmLogo} alt="" />
                     </div>
-                    <div className="col-lg-3 col-md-6 col-6 societie_logo">
+                    <div className="col-lg-2 col-md-6 col-sm-12 societie_logo">
                       <img src={TbiLogo} alt="" />
                     </div>
                   </div>

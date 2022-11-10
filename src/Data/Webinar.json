@@ -1,34 +1,38 @@
 [
   {
-    "heading2": "Heading 2-2",
+    "route": 1,
+    "heading2": "Agrim Prakash ",
     "heading1": "How to pitch an idea?",
     "desc1": "Fascinated to solve real-life problems? Do you find it hard to come up with a perfect solution to a real-life problem and turn it into a viable business idea? Then here we go...",
-    "desc2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "img1": "/webinar_img/webinarImg.png",
-    "img2": "/webinar_img/webinarImg2.png"
+    "desc2": "Digital Storyteller and Entrepreneur",
+    "img1": "/webinar_imgs/agrim.png",
+    "img2": "/webinar_imgs/webinarImg (1).png"
   },
   {
-    "heading2": "Heading 2-1",
+    "route": 2,
+    "heading2": "Bhavya Nandakumar",
     "heading1": "Social Media Marketing",
     "desc1": "Tired of promoting your product or service via print or public? Wonder how it's done in today's world through likes and views. Grab this opportunity to redeem your idea through eye-opening social media marketing techniques...",
-    "desc2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "img1": "/webinar_img/webinarImg.png",
-    "img2": "/webinar_img/webinarImg2.png"
+    "desc2": "Social Media Coach & Strategist",
+    "img1": "/webinar_imgs/bavya.png",
+    "img2": "/webinar_imgs/webinarImg (5).png"
   },
   {
-    "heading2": "Heading 2-3",
+    "route": 3,
+    "heading2": "Harikrishnan V",
     "heading1": "Procuring funding for your startup and legalities of funding",
     "desc1": "Excited to captivate investors, customers, and potential business partners into your business idea.Want to know what it takes to build your startup empire.",
-    "desc2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "img1": "/webinar_img/webinarImg.png",
-    "img2": "/webinar_img/webinarImg2.png"
+    "desc2": "Partner R Rajan Associates Chartered Accountant",
+    "img1": "/webinar_imgs/harikrishnan.png",
+    "img2": "/webinar_imgs/webinarImg (2).png"
   },
   {
-    "heading2": "Heading 2-4",
+    "route": 4,
+    "heading2": "Dr. Ananthu S Kumar",
     "heading1": "Journey of an Entrepreneur",
     "desc1": "Hope to be your boss someday by starting your own business. Dazed to take the brave step? Here we are to inspire you with a triumph story.",
-    "desc2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "img1": "/webinar_img/webinarImg.png",
-    "img2": "/webinar_img/webinarImg2.png"
+    "desc2": "CEO Founder Xylem learning App",
+    "img1": "/webinar_imgs/ananthu.png",
+    "img2": "/webinar_imgs/webinarImg (3).png"
   }
 ]
