@@ -1,0 +1,22 @@
+{
+    "short_name": "Upscale",
+    "name": "Upscale 2022",
+    "icons": [
+      {
+        "src": "/favicon.svg",
+        "type": "image/svg",
+        "sizes": "512x512",
+        "purpose":"any maskable"
+      },
+      {
+        "src": "/logo.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose":"any maskable"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#000000"
+  }
