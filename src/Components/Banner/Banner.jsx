@@ -24,7 +24,6 @@ const Banner = () => {
               <div className="banner_register_btn">
                 <button className="upscale_btn">Register</button>
               </div>
-
               <div className="container">
                 <div className="row">
                   <div className="col-lg-6"></div>
@@ -40,7 +39,9 @@ const Banner = () => {
                       to become efficient and professional entrepreneurs through
                       a week long program.
                     </p>
-                    <button className="upscale_btn">Learn more</button>
+                    <div className="learn_more_btn">
+                      <button className="upscale_btn">Learn more</button>
+                    </div>
                   </div>
                   <div className="col-lg-12 banner_coundown">
                     <Coundown />
@@ -59,7 +60,6 @@ const Banner = () => {
               <div className="societies mt-4">
                 <div className="container">
                   <div className="row societies_logos">
-
                     <div className="col-lg-3 col-md-6 col-6 societie_logo">
                       <img src={ieeeMalabar} alt="" />
                     </div>
@@ -72,10 +72,9 @@ const Banner = () => {
                     <div className="col-lg-2 col-md-6 col-6 societie_logo">
                       <img src={KsmLogo} alt="" />
                     </div>
-                    <div className="col-lg-2 col-md-6 col-12 societie_logo">
+                    <div className="col-lg-2 col-md-6 col-sm-12 societie_logo">
                       <img src={TbiLogo} alt="" />
                     </div>
-
                   </div>
                 </div>
               </div>

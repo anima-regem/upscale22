@@ -2,16 +2,13 @@ import React from "react";
 import "../GrabTickets/GrabTickets.css";
 import HeaderArrow from "../HeaderArrow/HeaderArrow";
 
-import ticketImg from "../../assets/images/ticketPage.svg";
+import ticketImg from "../../assets/images/Eventprgression.svg";
 import ticketsImg from "../../assets/images/tickets.svg";
 import mobileTickets from "../../assets/images/mobileTickets.svg";
 
 const GrabTickets = () => {
   return (
     <div className="grab_ticket_section">
-      <div className="container mt-4">
-        <HeaderArrow />
-      </div>
       <img className="grab_ticket_img" src={ticketImg} alt="" />
       <section>
         <div className="container tickets">
