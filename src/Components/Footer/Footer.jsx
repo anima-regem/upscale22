@@ -70,7 +70,7 @@ const Footer = () => {
                         Copyright &copy; 2022 IEEE SB GECPKD. All Rights Reserved
                     </p>
                     <div className='footer__socials'>
-                        <a className='clip' onClick={() => copy('page_link_here')} data-copy-status={copyStatus}>
+                        <a className='clip' onClick={() => copy('https://upscale22.vercel.app/')} data-copy-status={copyStatus}>
                             <img src={logoCopy} alt="logo_u"/>
                         </a>
                         <a href="https://www.instagram.com/ieeesbgecpkd/" target='_blank'>
