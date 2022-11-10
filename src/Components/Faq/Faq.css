@@ -1,5 +1,6 @@
 .faq {
   font-family: "Gotham";
+  background-color: black;
   color: white;
   position: relative;
 }
@@ -27,11 +28,7 @@
   background-color: rgb(255, 255, 255, 0.13);
   border: 0.222042px solid #2cb774;
   border-radius: 1em;
-  backdrop-filter: blur(30px);
-}
-
-.faq__container {
-  margin-bottom: 3rem;
+  backdrop-filter: blur(10px);
 }
 
 @media (max-width: 700px) {
@@ -46,37 +43,9 @@
   }
 }
 
-.faq_blob1,
-.faq_blob2,
-.faq_blob3 {
-  position: absolute;
-  --size: 45vw;
-  width: var(--size);
-  height: calc(var(--size) * 1.2);
-  background-image: radial-gradient(rgb(44, 183, 116, 0.2) 0, transparent 70%);
-  top: 0;
-  z-index: -1;
-}
-
-.faq_blob1 {
-  top: 0;
-  right: -30%;
-}
-
-.faq_blob2 {
-  top: 20%;
-  left: -30%;
-}
-
-.faq_blob3 {
-  display: none;
-  top: 65%;
-  right: -30%;
-}
-
 @media (max-width: 500px) {
   .faq {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 
   .faq_question,
@@ -84,27 +53,11 @@
     width: 40vw;
     line-height: 1.2;
   }
-
-  .faq_blob2 {
-    top: 20%;
-    left: -17%;
-  }
-
-  .faq_blob1 {
-    top: 5%;
-    right: -20%;
-  }
-
-  .faq_blob3 {
-    display: block;
-    top: 70%;
-    right: -20%;
-  }
 }
 
 /*  green blurry blobs */
 
-/* .faq_firstblob,
+.faq_firstblob,
 .faq_secondblob {
   position: relative;
   isolation: isolate;
@@ -112,18 +65,18 @@
 
 .faq_firstblob::before,
 .faq_secondblob::before {
-  --size: 150px;
+  --size: 200px;
   content: "";
   width: var(--size);
   height: var(--size);
   position: absolute;
   top: 0;
   z-index: -1;
-  background-color: rgb(44, 183, 116, 0.7);
-  filter: blur(1000px);
+  background-color: #2cb774;
+  filter: blur(200px);
 }
 
 .faq_firstblob::before {
   top: 10%;
   right: -20%;
-} */
+}
