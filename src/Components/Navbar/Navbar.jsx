@@ -1,8 +1,12 @@
-import React, {useEffect, useState} from "react";
+/*
+FIX:
+[] Incorrect scroll destination when clicked from another page.
+*/
+import React, { useEffect, useState } from "react";
 import "../Navbar/Navbar.css";
 import logo from "../../assets/images/logo.svg";
-import {NavHashLink} from 'react-router-hash-link';
-import {NavLink} from 'react-router-dom'
+import { NavHashLink } from 'react-router-hash-link';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -14,9 +18,15 @@ const Navbar = () => {
   const handleClick = () => setClicked(!clicked);
   const toggleClass = () => setOpened(!opened);
 
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -80;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+}
+
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   })
 
   useEffect(() => {
@@ -34,7 +44,7 @@ const Navbar = () => {
                onClick={() => {
                  handleClick();
                  toggleClass();
-                 handleScroll()
+                 handleScroll();
                }}>
             <svg width="100" height="100" viewBox="0 0 100 100">
               <path className="line line1"
@@ -49,17 +59,17 @@ const Navbar = () => {
               <div className=" items">
                 {/* TODO: Fix the issue active class is not applying when scrolled into.*/}
                 <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li"
-                             to="/#home">HOME</NavHashLink>
+                             to="/#top">HOME</NavHashLink>
+                <Link className="navbar__nav__el"
+                             to="/know-more">ABOUT</Link>
                 <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li"
-                             to="/#footer">ABOUT</NavHashLink>
+                             to="/#schedule"  scroll={scrollWithOffset}>SCHEDULE</NavHashLink>
+                <NavLink className="navbar__nav__el" activeClassName="active_li" to="/know-more">SPEAKERS</NavLink>
                 <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li"
-                             to="/#schedule">SCHEDULE</NavHashLink>
-                <NavLink className="navbar__nav__el" activeClassName="active_li" to="">SPEAKERS</NavLink>
-                <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li"
-                             to="/#footer">CONTACT</NavHashLink>
+                             to="#footer">CONTACT</NavHashLink>
                 <NavHashLink smooth className="navbar__nav__el mobile_only" activeClassName="active_li"
-                             to="/#faq">FAQ</NavHashLink>
-                <NavHashLink smooth className="navbar__nav__el mobile_only" activeClassName="active_li" to="/#footer">TEAM
+                             to="/#faq" scroll={scrollWithOffset}>FAQ</NavHashLink>
+                <NavHashLink smooth className="navbar__nav__el mobile_only" activeClassName="active_li" to="#footer">TEAM
                   & ENQUIRY</NavHashLink>
               </div>
             </div>
