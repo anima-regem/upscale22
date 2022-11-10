@@ -12,12 +12,12 @@ const Footer = () => {
         try {
             await navigator.clipboard.writeText(text)
             setCopyStatus('Copied!')
-            setTimeout(()=>setCopyStatus(''),2000)
+            setTimeout(()=>setCopyStatus(null),2000)
         } catch (e) {
             setCopyStatus('Failed to copy')
+            setTimeout(()=>setCopyStatus(null),2000)
         }
     }
-
 
     return (
         <>
