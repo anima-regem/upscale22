@@ -68,7 +68,7 @@
   font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
-  font-size: 50.3936px;
+  font-size: 3vw;
   line-height: 56px;
   /* identical to box height */
   letter-spacing: 0.03em;
@@ -79,7 +79,7 @@
   font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
-  font-size: 136.687px;
+  font-size: 7vw;
   line-height: 131px;
   /* identical to box height */
   color: #2cb774;
@@ -126,28 +126,13 @@
     margin-top: 200px;
   }
   .banner_collaborating > h2 {
-    font-size: 40px;
     line-height: 56px;
   }
   .banner_collaborating > h1 {
-    font-size: 100px;
     line-height: 131px;
   }
   .societie_logo > img {
     width: 180px;
-  }
-}
-@media (max-width: 568px) {
-  .banner_collaborating {
-    margin-top: 200px;
-  }
-  .banner_collaborating > h2 {
-    font-size: 30px;
-    line-height: 30px;
-  }
-  .banner_collaborating > h1 {
-    font-size: 75px;
-    line-height: 100px;
   }
 }
 
@@ -174,13 +159,16 @@
     justify-content: center;
   }
   .banner_collaborating > h2 {
-    font-size: 21.1418px;
+    font-size: 5vw;
     line-height: 20px;
   }
   .banner_collaborating > h1 {
-    font-size: 21.1418px;
+    font-size: 5vw;
     line-height: 20px;
     color: #2cb774;
+  }
+  .banner_collaborating > h1::before {
+    content: "\00a0 ";
   }
   .societie_logo > img {
     width: 142.71px;

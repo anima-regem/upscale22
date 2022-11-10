@@ -16,7 +16,7 @@
   font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
-  font-size: 7vw;
+  font-size: 8vw;
   line-height: 133px;
   color: #2cb774;
 }
@@ -42,7 +42,6 @@
   }
   .home_webinar_heading > h1 {
     justify-content: center;
-    font-size: 36px;
     line-height: 40px;
   }
   .webinar_home_card_section {
