@@ -1,0 +1,212 @@
+:root {
+    --speaker-header: #2CB774;
+}
+
+.speakers__mentors {
+    padding: 5rem;
+}
+
+.speaker__section {
+    font-family: 'Gotham', sans-serif;
+}
+
+.speaker__heading {
+    color: var(--speaker-header);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 7.5rem;
+}
+
+.speakers__container {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+}
+
+.speaker__el {
+    /* margin-left: 14rem; */
+}
+
+.user5,
+.user6 {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+.mentors__container {
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.blur1 {
+    position: absolute;
+    width: 640px;
+    height: 206.9px;
+    left: -135px;
+    top: 175.5px;
+    background: rgba(44, 183, 116, 0.6);
+    filter: blur(250px);
+}
+
+.blur2 {
+    position: absolute;
+    width: 658px;
+    height: 122.9px;
+    left: -58px;
+    top: 1193.5px;
+    background: rgba(44, 183, 116, 0.6);
+    filter: blur(250px);
+}
+
+@media(max-width: 1738px) {
+    .speakers__mentors {
+        padding: 4rem;
+    }
+
+    .mentors__container {
+        grid-template-columns: repeat(4, 0.4fr);
+    }
+}
+
+@media (max-width: 1552px) {
+    .speakers__mentors {
+        padding: 2rem;
+    }
+
+    .speakers__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mentors__container {
+        grid-template-columns: repeat(3, 0.3fr);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1278px) {
+    .speakers__mentors {
+        padding: 1rem;
+    }
+
+    .mentors__container {
+        grid-template-columns: repeat(2, 0.3fr);
+        column-gap: 5rem;
+    }
+
+    .mentor__el:last-child {
+        transform: translateX(57%);
+        -webkit-transform: translateX(57%);
+        -moz-transform: translateX(57%);
+        -ms-transform: translateX(57%);
+        -o-transform: translateX(57%);
+    }
+}
+
+@media (max-width: 1000px) {
+    .mentors__container {
+        grid-template-columns: repeat(2, 0.4fr);
+        row-gap: 2rem;
+    }
+
+    .speaker__heading {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .speakers__container {
+        grid-template-columns: repeat(3, 0.3fr);
+        grid-template-rows: auto;
+        column-gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .blur1 {
+        position: absolute;
+        width: 220px;
+        height: 105.9px;
+        left: -64px;
+        top: 43.5px;
+        background: rgba(44, 183, 116, 0.6);
+        filter: blur(250px);
+    }
+
+    .blur2 {
+        position: absolute;
+        width: 445px;
+        height: 74.9px;
+        left: 77px;
+        top: 1017.5px;
+        background: rgba(44, 183, 116, 0.6);
+        filter: blur(59px);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .mentor__el:nth-child(odd) {
+        margin-left: 0;
+        width: initial;
+    }
+
+    .speakers__mentors {
+        padding: 2rem;
+    }
+
+    .speaker__heading {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .user5 {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+    .speaker__el:last-child {
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+    }
+
+    .speakers__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-content: start;
+        margin-bottom: 6rem;
+    }
+
+    .mentors__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        margin-top: 0;
+    }
+
+    .mentor__el:last-child {
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+    }
+}

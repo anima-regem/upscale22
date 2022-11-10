@@ -64,7 +64,7 @@ const Navbar = () => {
                              to="/know-more">ABOUT</Link>
                 <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li"
                              to="/#schedule"  scroll={scrollWithOffset}>SCHEDULE</NavHashLink>
-                <NavLink className="navbar__nav__el" activeClassName="active_li" to="/know-more">SPEAKERS</NavLink>
+                <NavLink className="navbar__nav__el" activeClassName="active_li" to="/speakers#top">SPEAKERS</NavLink>
                 <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li"
                              to="#footer">CONTACT</NavHashLink>
                 <NavHashLink smooth className="navbar__nav__el mobile_only" activeClassName="active_li"

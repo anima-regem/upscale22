@@ -6,77 +6,77 @@
 }
 
 .faq_head {
-color: #2cb774;
-margin-left: 0.1em;
-font-size: 1.75em;
+  color: #2cb774;
+  margin-left: 0.1em;
+  font-size: 1.75em;
 }
 
 .faq_heading {
-margin-left: 1em;
-font-size: 2em;
+  margin-left: 1em;
+  font-size: 2em;
 }
 
 .faq_question,
 .faq_answer {
-width: 32vw;
-margin: 0 auto;
-margin-top: 3rem;
-line-height: 1.2;
+  width: 32vw;
+  margin: 0 auto;
+  margin-top: 3rem;
+  line-height: 1.2;
 }
 
 .faq_answer {
-background-color: rgb(255, 255, 255, 0.13);
-border: 0.222042px solid #2cb774;
-border-radius: 1em;
-backdrop-filter: blur(10px);
+  background-color: rgb(255, 255, 255, 0.13);
+  border: 0.222042px solid #2cb774;
+  border-radius: 1em;
+  backdrop-filter: blur(10px);
 }
 
 @media (max-width: 700px) {
-.faq {
-  font-size: 0.7rem;
-}
+  .faq {
+    font-size: 0.7rem;
+  }
 
-.faq_question,
-.faq_answer {
-  margin-top: 2rem;
-  width: 37vw;
-}
+  .faq_question,
+  .faq_answer {
+    margin-top: 2rem;
+    width: 37vw;
+  }
 }
 
 @media (max-width: 500px) {
-.faq {
-  font-size: 0.6rem;
-}
+  .faq {
+    font-size: 0.6rem;
+  }
 
   .faq_question,
-.faq_answer {
-  width: 40vw;
-  line-height: 1.2;
-}
+  .faq_answer {
+    width: 40vw;
+    line-height: 1.2;
+  }
 }
 
 /*  green blurry blobs */
 
 .faq_firstblob,
 .faq_secondblob {
-position: relative;
-isolation: isolate;
+  position: relative;
+  isolation: isolate;
 }
 
 .faq_firstblob::before,
 .faq_secondblob::before {
---size: 200px;
-content: "";
-width: var(--size);
-height: var(--size);
-position: absolute;
-top: 0;
-z-index: -1;
-background-color: #2cb774;
-filter: blur(200px);
+  --size: 200px;
+  content: "";
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-color: #2cb774;
+  filter: blur(200px);
 }
 
 .faq_firstblob::before {
-top: 10%;
-right: -20%;
+  top: 10%;
+  right: -20%;
 }
