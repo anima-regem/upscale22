@@ -5,6 +5,8 @@ import WebinarPage from "../../Pages/WebinarPage";
 import KnowMore from "../../Pages/KnowMore";
 import { AnimatePresence } from 'framer-motion'
 import ScrollToTop from '../../helpers/ScrollToTop';
+import webinarData from "../../Data/Webinar.json";
+
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -12,9 +14,12 @@ function AnimatedRoutes() {
       <AnimatePresence>
           <ScrollToTop />
           <Routes key={ location.pathname } location={location}>
-            <Route path="/" element={<Home />} />
-            <Route path="/webinar" element={<WebinarPage/>} />
-            <Route path="/know-more" element={<KnowMore/>}/>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/webinar/:id"
+            element={<WebinarPage webinars={webinarData} />}
+          />
+          <Route path="/know-more" element={<KnowMore />} />
         </Routes>
     </AnimatePresence>
   )
