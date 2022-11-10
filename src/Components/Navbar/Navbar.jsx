@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import "../Navbar/Navbar.css";
 import logo from "../../assets/images/logo.svg";
 import {NavHashLink} from 'react-router-hash-link';
-import {NavLink} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -49,17 +49,17 @@ const Navbar = () => {
               <div className=" items">
                 {/* TODO: Fix the issue active class is not applying when scrolled into.*/}
                 <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li"
-                             to="/#home">HOME</NavHashLink>
-                <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li"
-                             to="/#footer">ABOUT</NavHashLink>
+                             to="/#top">HOME</NavHashLink>
+                <Link className="navbar__nav__el"
+                             to="/know-more">ABOUT</Link>
                 <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li"
                              to="/#schedule">SCHEDULE</NavHashLink>
-                <NavLink className="navbar__nav__el" activeClassName="active_li" to="">SPEAKERS</NavLink>
+                <NavLink className="navbar__nav__el" activeClassName="active_li" to="/speakers">SPEAKERS</NavLink>
                 <NavHashLink smooth className="navbar__nav__el" activeClassName="active_li"
-                             to="/#footer">CONTACT</NavHashLink>
+                             to="#footer">CONTACT</NavHashLink>
                 <NavHashLink smooth className="navbar__nav__el mobile_only" activeClassName="active_li"
                              to="/#faq">FAQ</NavHashLink>
-                <NavHashLink smooth className="navbar__nav__el mobile_only" activeClassName="active_li" to="/#footer">TEAM
+                <NavHashLink smooth className="navbar__nav__el mobile_only" activeClassName="active_li" to="#footer">TEAM
                   & ENQUIRY</NavHashLink>
               </div>
             </div>
