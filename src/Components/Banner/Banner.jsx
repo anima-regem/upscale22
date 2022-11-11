@@ -51,6 +51,7 @@ const Banner = () => {
                   <div className="col-lg-6 col-12">
                     <div className="row">
                       <div className="col-lg-6 col-12 banner_collaborating">
+                        <div className="blur-collab"></div>
                         <h2>COLLABORATING</h2>
                         <h1>SOCIETIES</h1>
                       </div>

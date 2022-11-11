@@ -3,35 +3,52 @@
   background-color: #000;
 }
 
+.banner_collaborating>.blur-collab {
+  background-color: #2cb77457;
+  padding: 8%;
+  position: absolute;
+
+  grid-row: 1;
+  grid-column: 1;
+  filter: blur(100px);
+  z-index: 1;
+}
+
 .banner_body {
   background-image: url(../../assets/images/earthBackground.svg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .banner_logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
 }
-.banner_logo > img {
+
+.banner_logo>img {
   margin-top: 170px;
   height: 277px;
 }
+
 .banner_register_btn {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 90px;
 }
+
 .learn_more_btn {
   animation: fadeInLeft 700ms ease-in-out;
 }
+
 .banner_details {
   margin-top: 320px;
 }
-.banner_details > h1 {
+
+.banner_details>h1 {
   font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
@@ -40,10 +57,12 @@
   color: #ffffff;
   animation: fadeInLeft 700ms ease-in-out;
 }
-.banner_details > h1 > span {
+
+.banner_details>h1>span {
   color: #2cb774;
 }
-.banner_details > p {
+
+.banner_details>p {
   font-family: "Gotham";
   font-style: normal;
   font-weight: 400;
@@ -54,12 +73,14 @@
   margin: 0 0 120px 0;
   animation: fadeInRight 700ms ease-in-out;
 }
+
 .banner_collaborating {
   margin-top: 285px;
   display: flex;
   flex-direction: column;
 }
-.banner_collaborating > h2 {
+
+.banner_collaborating>h2 {
   font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
@@ -69,7 +90,8 @@
   color: #ffffff;
   margin: 0;
 }
-.banner_collaborating > h1 {
+
+.banner_collaborating>h1 {
   font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
@@ -84,6 +106,7 @@
   height: fit-content;
   background: rgba(255, 255, 255, 0.18);
 }
+
 .societies_logos {
   height: 232px;
   display: flex;
@@ -94,35 +117,43 @@
 .banner_coundown {
   margin-top: 361px;
 }
+
 @media (max-width: 1176px) {
-  .banner_logo > img {
+  .banner_logo>img {
     margin-top: 100px;
     height: 200px;
   }
 }
+
 @media (max-width: 900px) {
   .banner_coundown {
     margin-top: 170px;
   }
-  .banner_details > h1 {
+
+  .banner_details>h1 {
     font-size: 55px;
     line-height: 62px;
   }
-  .banner_details > p {
+
+  .banner_details>p {
     font-size: 20px;
     line-height: 25px;
     margin: 0 0 90px 0;
   }
+
   .banner_collaborating {
     margin-top: 200px;
   }
-  .banner_collaborating > h2 {
+
+  .banner_collaborating>h2 {
     line-height: 56px;
   }
-  .banner_collaborating > h1 {
+
+  .banner_collaborating>h1 {
     line-height: 131px;
   }
-  .societie_logo > img {
+
+  .societie_logo>img {
     width: 180px;
   }
 }
@@ -134,56 +165,69 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   .banner_details {
     margin-top: 108px;
   }
-  .banner_logo > img {
+
+  .banner_logo>img {
     margin-top: 65px;
     height: 130.41px;
   }
+
   .banner_register_btn {
     margin-top: 35px;
   }
+
   .banner_collaborating {
     margin-top: 105px;
     flex-direction: row;
     justify-content: center;
   }
-  .banner_collaborating > h2 {
+
+  .banner_collaborating>h2 {
     font-size: 5vw;
     line-height: 20px;
   }
-  .banner_collaborating > h1 {
+
+  .banner_collaborating>h1 {
     font-size: 5vw;
     line-height: 20px;
     color: #2cb774;
   }
+
   .societie_logo {
     display: flex;
     justify-content: center;
   }
-  .banner_collaborating > h1::before {
+
+  .banner_collaborating>h1::before {
     content: "\00a0 ";
   }
 
-  .societie_logo > img {
+  .societie_logo>img {
     width: 130px;
   }
-  .banner_details > h1 {
+
+  .banner_details>h1 {
     font-size: 21.1418px;
   }
-  .banner_details > h1 > span {
+
+  .banner_details>h1>span {
     color: #2cb774;
   }
-  .banner_details > p {
+
+  .banner_details>p {
     font-weight: 400;
     font-size: 14px;
     padding: 0 10px 0;
     margin: -10px 0 30px 0;
   }
-  .banner_details > button {
+
+  .banner_details>button {
     margin-left: 10px;
   }
+
   .banner_coundown {
     margin-top: 72px;
   }
@@ -194,6 +238,7 @@
     opacity: 0;
     transform: translateY(50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -205,6 +250,7 @@
     opacity: 0;
     transform: translateX(300px);
   }
+
   to {
     opacity: 1;
   }
@@ -215,15 +261,18 @@
     opacity: 0;
     transform: translateX(-300px);
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes fadeInBottom {
   0% {
     opacity: 0;
     transform: transLateY(80px);
   }
+
   100% {
     opacity: 1;
   }
