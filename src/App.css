@@ -15,6 +15,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+#home{
+    overflow: hidden;
+}
+
 .upscale_btn {
   padding: 10px 25px;
   background: none;
