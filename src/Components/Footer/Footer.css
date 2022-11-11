@@ -24,7 +24,6 @@ ul {
 
 .footer__link:link,
 .footer__link:visited {
-    /* removes override */
     opacity: 1;
     text-decoration: none;
     color: #fff;

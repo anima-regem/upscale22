@@ -58,7 +58,6 @@
   font-weight: 700;
   font-size: 140px;
   line-height: 134px;
-  /* identical to box height */
   color: rgba(255, 255, 255, 0.36);
 }
 .coundown_time_para > p {
@@ -67,7 +66,6 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 23px;
-  /* identical to box height */
   color: #ffffff;
 }
 

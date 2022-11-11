@@ -4,11 +4,14 @@
   background-color: #000;
 }
 .promo_video_blur {
+  background-color: #2cb77448;
+  padding: 12%;
   position: absolute;
-  width: 100%;
-  height: 230px;
-  background: rgba(44, 183, 116, 0.85);
-  filter: blur(300px);
+
+  grid-row: 1;
+  grid-column: 1;
+  filter: blur(100px);
+  z-index: 1;
 }
 .promo_video_heading {
   display: flex;
