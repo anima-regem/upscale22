@@ -52,7 +52,8 @@
 }
 
 .learn_more_btn {
-  animation: fadeInLeft 3s ease-in-out;
+  animation: fadeInLeft 2s ease-in-out;
+
 }
 
 .banner_details {
@@ -66,7 +67,8 @@
   font-size: 65.0277px;
   line-height: 62px;
   color: #ffffff;
-  animation: fadeInLeft 3s ease-in-out;
+  animation: fadeInLeft 2s ease-in-out;
+
 }
 
 .banner_details>h1>span {
@@ -82,7 +84,8 @@
   color: #ffffff;
   padding: 5px 10px;
   margin: 0 0 120px 0;
-  animation: fadeInRight 3s ease-in-out;
+  animation: fadeInRight 2s ease-in-out;
+
 }
 
 .banner_collaborating {
@@ -306,6 +309,16 @@
   0% {
     opacity: 0;
     transform: translateX(-300px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
   }
 
   100% {
