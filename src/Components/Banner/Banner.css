@@ -5,22 +5,24 @@
 
 .collab_blur {
   position: absolute;
-  left:50px;
+  left: 50px;
   width: 781px;
   height: 222px;
-  background: rgba(44, 183, 116, 0.6);
-  filter: blur(250px);
+  grid-row: 1;
+  grid-column: 1;
+  background: rgba(44, 183, 116, 0.37);
+  filter: blur(100px);
 }
 
-.banner_collaborating>.blur-collab {
+/* .banner_collaborating>.blur-collab {
   background-color: #2cb77457;
   padding: 8%;
   position: absolute;
-
   grid-row: 1;
   grid-column: 1;
   filter: blur(100px);
   z-index: 1;
+} */
 
 .banner_body {
   background-image: url(../../assets/images/earthBackground.svg);
@@ -121,11 +123,13 @@
   display: flex;
   align-items: center;
 }
+
 .societie_logo {
   display: flex;
   justify-content: center;
 }
-.societie_logo > img {
+
+.societie_logo>img {
   width: 220px;
 }
 
@@ -139,9 +143,11 @@
     margin-top: 100px;
     height: 200px;
   }
-  .societie_logo > img {
+
+  .societie_logo>img {
     width: 190px;
   }
+
   .collab_blur {
     position: absolute;
     width: 600px;
@@ -149,6 +155,7 @@
     background: rgba(44, 183, 116, 0.6);
     filter: blur(250px);
   }
+
   /* .societies_logos {
     height: 290px;
   } */
@@ -196,6 +203,7 @@
     background: rgba(44, 183, 116, 0.6);
     filter: blur(59.2189px);
   }
+
   .banner_body {
     background-image: url(../../assets/images/mobileEarthBackground.svg);
     width: 100%;
