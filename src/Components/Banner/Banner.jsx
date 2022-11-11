@@ -49,7 +49,7 @@ const Banner = () => {
                     <div className="learn_more_btn">
                       <button
                         className="upscale_btn"
-                        onClick={() => navigate("/ticket")}
+                        onClick={() => navigate("/about")}
                       >
                         Learn more
                       </button>

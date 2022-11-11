@@ -97,7 +97,7 @@ const Footer = () => {
             <a
               className="clip"
               onClick={() => {
-                copy("https://upscale22.vercel.app/");
+                copy("https://upscale22.live");
               }}
               data-copy-status={copyStatus}
             >
