@@ -17,7 +17,7 @@ const WebinarSection = () => {
             {webinarData.map((data) => (
               <div
                 onClick={() => navigate(`/webinar/${data.route}`)}
-                className="col-lg-6 mt-3 align_center"
+                className="col-lg-6 align_center"
               >
                 <WebinarCard
                   image={data.img2}

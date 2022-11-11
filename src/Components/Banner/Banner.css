@@ -3,6 +3,15 @@
   background-color: #000;
 }
 
+.collab_blur {
+  position: absolute;
+  left:50px;
+  width: 781px;
+  height: 222px;
+  background: rgba(44, 183, 116, 0.6);
+  filter: blur(250px);
+}
+
 .banner_collaborating>.blur-collab {
   background-color: #2cb77457;
   padding: 8%;
@@ -12,7 +21,6 @@
   grid-column: 1;
   filter: blur(100px);
   z-index: 1;
-}
 
 .banner_body {
   background-image: url(../../assets/images/earthBackground.svg);
@@ -75,6 +83,7 @@
 }
 
 .banner_collaborating {
+  position: relative;
   margin-top: 285px;
   display: flex;
   flex-direction: column;
@@ -108,9 +117,16 @@
 }
 
 .societies_logos {
-  height: 232px;
+  height: 240px;
   display: flex;
   align-items: center;
+}
+.societie_logo {
+  display: flex;
+  justify-content: center;
+}
+.societie_logo > img {
+  width: 220px;
 }
 
 
@@ -123,6 +139,19 @@
     margin-top: 100px;
     height: 200px;
   }
+  .societie_logo > img {
+    width: 190px;
+  }
+  .collab_blur {
+    position: absolute;
+    width: 600px;
+    height: 150px;
+    background: rgba(44, 183, 116, 0.6);
+    filter: blur(250px);
+  }
+  /* .societies_logos {
+    height: 290px;
+  } */
 }
 
 @media (max-width: 900px) {
@@ -159,6 +188,14 @@
 }
 
 @media (max-width: 430px) {
+  .collab_blur {
+    top: -20px;
+    left: -50px;
+    width: 185px;
+    height: 52.59px;
+    background: rgba(44, 183, 116, 0.6);
+    filter: blur(59.2189px);
+  }
   .banner_body {
     background-image: url(../../assets/images/mobileEarthBackground.svg);
     width: 100%;

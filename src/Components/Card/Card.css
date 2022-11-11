@@ -1,149 +1,154 @@
 :root {
-    --rounded-card-height: 19rem;
-    --rounded-card-mobile-height: 8.4rem;
-    --rounded-card-width: 14rem;
-    --rounded-card-mobile-width: 6.25rem;
-    --card-mobile-height: 12rem;
-    --card-mobile-width: 9.1rem;
+  --rounded-card-height: 19rem;
+  --rounded-card-mobile-height: 8.4rem;
+  --rounded-card-width: 14rem;
+  --rounded-card-mobile-width: 6.25rem;
+  --card-mobile-height: 12rem;
+  --card-mobile-width: 9.1rem;
 }
-
 .card__container {
-    color: #fff;
-    background: #262626;
-    display: flex;
-    flex-direction: column;
+  color: #fff;
+  background: #262626;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  /* max-width: 20rem; */
+  /* width: 100%; */
+  width: 330px;
+  height: 463.66px;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-    width: 330px;
-    height: 463.66px;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
-    padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .rounded__card__container {
-    height: 19rem;
-    width: 14rem;
+  height: 19rem;
+  width: 14rem;
 }
 
 .card__img__container {
-    overflow: hidden;
-    height: 18rem;
-    position: relative;
-    flex-grow: 1;
+  overflow: hidden;
+  height: 18rem;
+  position: relative;
+  flex-grow: 1;
 }
 
 .img__rounded {
-    border-radius: 50% !important;
-    -webkit-border-radius: 50% !important;
-    -moz-border-radius: 50% !important;
-    -ms-border-radius: 50% !important;
-    -o-border-radius: 50% !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
 }
 
+
 .card__img__container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    inset: 0;
-    border-radius: 0.2rem;
-    -webkit-border-radius: 0.2rem;
-    -moz-border-radius: 0.2rem;
-    -ms-border-radius: 0.2rem;
-    -o-border-radius: 0.2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
 }
 
 .card__text__container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
 }
 
 .card__text {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .prim__text {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .sec__text {
-    line-height: 2rem;
-    font-size: 1.1rem;
-    font-style: italic;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-style: italic;
 }
 
 @media (max-width: 1000px) {
-    .card__container {
-        height: calc(var(--card-mobile-height) + 10rem);
-        width: calc(var(--card-mobile-width) + 6rem);
-    }
+  .card__container {
+    height: calc(var(--card-mobile-height) + 10rem);
+    width: calc(var(--card-mobile-width) + 6rem);
+  }
 }
 
-@media(max-width: 570px) {
-    .card__container {
-        gap: 1rem;
-        padding: 0.7rem 0.5rem;
-    }
+@media (max-width: 570px) {
+  .card__container {
+    /* max-width: 11rem; */
+    gap: 1rem;
+    padding: 0.7rem 0.5rem;
+  }
 
-    .card__img__container {
-        height: 9rem;
-    }
+  .card__img__container {
+    height: 9rem;
+  }
 
-    .card__img__container img {
-        object-fit: cover;
-    }
+  .card__img__container img {
+    object-fit: cover;
+  }
 
-    .card__text {
-        font-size: 1rem;
-    }
+  .card__text {
+    font-size: 1rem;
+  }
 
-    .card__text__container {
-        padding: 0;
-    }
+  .card__text__container {
+    padding: 0;
+  }
 
-    .sec__text {
-        line-height: 1rem;
-    }
+  .sec__text {
+    line-height: 1rem;
+  }
 
-    .rounded__card__container {
-        width: initial;
-        height: initial;
-    }
+  .rounded__card__container {
+    width: initial;
+    height: initial;
+  }
 
-    .card__container {
-        height: calc(var(--card-mobile-height) + 5rem);
-        width: calc(var(--card-mobile-width) + 3rem);
-    }
+  .card__container {
+    height: calc(var(--card-mobile-height) + 5rem);
+    width: calc(var(--card-mobile-width) + 3rem);
+  }
+
 }
 
 @media (max-width: 474px) {
-    .card__container {
-        height: calc(var(--card-mobile-height) + 3rem);
-        width: calc(var(--card-mobile-width) + 0rem);
-    }
+  .card__container {
+    height: calc(var(--card-mobile-height) + 3rem);
+    width: calc(var(--card-mobile-width) + 0rem);
+  }
 }
 
 @media (max-width: 370px) {
-    .card__container {
-        height: calc(var(--card-mobile-height) + 0rem);
-        width: calc(var(--card-mobile-width) - 1rem);
-    }
+  .card__container {
+    height: calc(var(--card-mobile-height) + 0rem);
+    width: calc(var(--card-mobile-width) - 1rem);
+  }
 }
 
 @media (max-width: 320px) {
-    .card__container {
-        height: calc(var(--card-mobile-height) + 3rem);
-        width: calc(var(--card-mobile-width) + 4rem);
-    }
+  .card__container {
+    height: calc(var(--card-mobile-height) + 3rem);
+    width: calc(var(--card-mobile-width) + 4rem);
+  }
 
-    .rounded__card__container {
-        height: calc(var(--card-mobile-height) + 3rem);
-        width: calc(var(--card-mobile-width) + 4rem);
-    }
-
+  .rounded__card__container {
+    height: calc(var(--card-mobile-height) + 3rem);
+    width: calc(var(--card-mobile-width) + 4rem);
+  }
 }

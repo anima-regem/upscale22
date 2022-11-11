@@ -12,8 +12,12 @@ const PromoVideo = () => {
       <div className="container">
         <div className="video_player_section">
           <div className="player">
-            <ReactPlayer
-              url="https://youtu.be/J1qsrBl_CR0"
+            <div className="comming_soon_video">
+              <h1>COMMING</h1>
+              <h2>SOON...</h2>
+            </div>
+            {/* <ReactPlayer
+              url=""
               playing={true}
               playIcon={true}
               muted={true}
@@ -22,7 +26,7 @@ const PromoVideo = () => {
               width="100%"
               height="100%"
               light={false}
-            />
+            /> */}
           </div>
         </div>
       </div>
