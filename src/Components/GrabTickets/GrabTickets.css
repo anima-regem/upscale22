@@ -1,0 +1,114 @@
+.ticket_mobile {
+  display: none;
+}
+.grab_ticket_img {
+  width: 100%;
+  margin-top: -130px;
+}
+.tickets {
+  margin-top: -270px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tickets > h1 {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 133px;
+  color: #2cb774;
+}
+.tickets > p {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.ticket_desktop {
+  margin-top: -200px;
+  width: 100%;
+}
+
+@media (max-width: 1025px) {
+  .grab_ticket_img {
+    margin-top: -30px;
+  }
+  .tickets {
+    margin-top: -140px;
+  }
+}
+@media (max-width: 993px) {
+  .grab_ticket_img {
+    margin-top: -30px;
+  }
+  .tickets {
+    margin-top: -140px;
+  }
+  .ticket_desktop {
+    margin-top: -90px;
+    width: 100%;
+  }
+  .tickets > h1 {
+    font-size: 100px;
+    line-height: 133px;
+  }
+  .tickets > p {
+    font-size: 20px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 769px) {
+    .tickets{
+        margin-top: -100px;
+    }
+  .tickets > h1 {
+    font-size: 85px;
+    line-height: 90px;
+  }
+  .tickets > p {
+    font-size: 18px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 632px) {
+    .tickets > h1 {
+      font-size: 65px;
+      line-height: 80px;
+    }
+    .tickets > p {
+      font-size: 16px;
+      line-height: 15px;
+    }
+  }
+
+@media (max-width: 430px) {
+  .grab_ticket_img {
+    margin-top: -20px;
+  }
+  .tickets {
+    margin-top: -50px;
+  }
+  .tickets > h1 {
+    font-size: 33.5241px;
+    line-height: 37px;
+  }
+  .tickets > p {
+    font-size: 20px;
+    line-height: 19px;
+  }
+  .ticket_desktop {
+    display: none;
+    margin-top: -60px;
+    width: 100%;
+  }
+  .ticket_mobile {
+    display: block;
+    width: 100%;
+    margin-top: -30px;
+    padding-bottom: 20px;
+  }
+}

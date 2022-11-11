@@ -13,8 +13,10 @@ const PromoVideo = () => {
         <div className="video_player_section">
           <div className="player">
             <ReactPlayer
-              url=""
+              url="https://youtu.be/J1qsrBl_CR0"
               playing={true}
+              playIcon={true}
+              muted={true}
               loop={true}
               controls={false}
               width="100%"
