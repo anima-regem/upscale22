@@ -3,6 +3,7 @@ import "./App.css";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 function App() {
   return (
