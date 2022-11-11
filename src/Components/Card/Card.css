@@ -162,7 +162,7 @@
 
 @media (max-width: 370px) {
     .card__container {
-        height: calc(var(--card-mobile-height) + 0rem);
+        height: calc(var(--card-mobile-height) + 1rem);
         width: calc(var(--card-mobile-width) - 1rem);
     }
 
