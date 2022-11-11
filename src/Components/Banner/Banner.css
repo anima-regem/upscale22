@@ -29,7 +29,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  animation: fade 2s ease-in-out;
+  animation: fade 3s ease-in-out;
 }
 
 .banner_logo {
@@ -52,7 +52,7 @@
 }
 
 .learn_more_btn {
-  animation: fadeInLeft 2s ease-in-out;
+  animation: fadeInLeft 3s ease-in-out;
 }
 
 .banner_details {
@@ -66,7 +66,7 @@
   font-size: 65.0277px;
   line-height: 62px;
   color: #ffffff;
-  animation: fadeInLeft 2s ease-in-out;
+  animation: fadeInLeft 3s ease-in-out;
 }
 
 .banner_details>h1>span {
@@ -82,7 +82,7 @@
   color: #ffffff;
   padding: 5px 10px;
   margin: 0 0 120px 0;
-  animation: fadeInRight 2s ease-in-out;
+  animation: fadeInRight 3s ease-in-out;
 }
 
 .banner_collaborating {
