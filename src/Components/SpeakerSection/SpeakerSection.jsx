@@ -4,6 +4,7 @@ import Card from "../Card/Card";
 import user from "../../assets/images/webinarImg.png";
 import webinarData from "../../Data/Webinar.json";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function SpeakerSection() {
   const navigate = useNavigate();
@@ -28,16 +29,17 @@ function SpeakerSection() {
                             <Card imgUrl={speaker4} name="User4" des="abcde"/>
                         </div> */}
           {webinarData.map((speaker) => (
-            <div
+            <motion.div
               className="speaker__el"
               onClick={() => navigate(`/webinar/${speaker.route}`)}
+              whileHover={{ scale: 1.1 }}
             >
               <Card
                 imgUrl={speaker.img1}
                 name={speaker.heading2}
                 des={speaker.desc2}
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
