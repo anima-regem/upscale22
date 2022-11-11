@@ -12,9 +12,7 @@
     background: #262626;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    /* max-width: 20rem; */
-    /* width: 100%; */
+
     width: 330px;
     height: 463.66px;
     border-radius: 0.5rem;
@@ -63,7 +61,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    /* padding-bottom: 1rem; */
 }
 
 .card__text {
@@ -89,7 +86,6 @@
 
 @media(max-width: 570px) {
     .card__container {
-        /* max-width: 11rem; */
         gap: 1rem;
         padding: 0.7rem 0.5rem;
     }

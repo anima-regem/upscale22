@@ -2,15 +2,7 @@
   width: 100%;
   background-color: #000;
 }
-/* .banner_societies_blur {
-  position: relative;
-  width: 185px;
-  height: 52.59px;
-  top: 100%;
 
-  background: rgba(44, 183, 116, 0.6);
-  filter: blur(59.2189px);
-} */
 .banner_body {
   background-image: url(../../assets/images/earthBackground.svg);
   width: 100%;
@@ -57,7 +49,6 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 25px;
-  /* or 104% */
   color: #ffffff;
   padding: 5px 10px;
   margin: 0 0 120px 0;
@@ -74,7 +65,6 @@
   font-weight: 700;
   font-size: 3vw;
   line-height: 56px;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: #ffffff;
   margin: 0;
@@ -85,12 +75,10 @@
   font-weight: 700;
   font-size: 7vw;
   line-height: 131px;
-  /* identical to box height */
   color: #2cb774;
   margin: 0;
 }
 
-/* societies */
 .societies {
   width: 100%;
   height: fit-content;
@@ -102,10 +90,8 @@
   align-items: center;
 }
 
-/* societies */
 
 .banner_coundown {
-  /* animation: fadeInBottom 1.5s ease-in-out; */
   margin-top: 361px;
 }
 @media (max-width: 1176px) {
@@ -182,7 +168,6 @@
 
   .societie_logo > img {
     width: 130px;
-    /* height: 60.81px; */
   }
   .banner_details > h1 {
     font-size: 21.1418px;
@@ -204,7 +189,6 @@
   }
 }
 
-/* animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
