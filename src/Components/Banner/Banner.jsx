@@ -42,7 +42,7 @@ const Banner = () => {
                       a week long program.
                     </p>
                     <div className="learn_more_btn">
-                      <button className="upscale_btn" onClick={()=>navigate("/ticket")}>Learn more</button>
+                      <button className="upscale_btn" onClick={()=>navigate("/about")}>Learn more</button>
                     </div>
                   </div>
                   <div className="col-lg-12 banner_coundown">

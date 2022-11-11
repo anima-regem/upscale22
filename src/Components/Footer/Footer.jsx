@@ -86,7 +86,7 @@ const Footer = () => {
             The IEEE Student Branch of Government Engineering College Palakkad,
             We work for providing an ideal platform for young minds to nourish
             their technical skills as an engineer by providing a technical
-            home.The SB has has actively working IAS , ComSoc and Computer
+            home.The SB has actively working IAS , ComSoc and Computer
             Society and also WiE affinity group.
           </p>
         </section>
