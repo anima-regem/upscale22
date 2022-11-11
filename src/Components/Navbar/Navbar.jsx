@@ -5,7 +5,7 @@ FIXME:
 import React, { useEffect, useState } from "react";
 import "../Navbar/Navbar.css";
 import logo from "../../assets/images/logo.svg";
-import { NavHashLink, HashLink } from "react-router-hash-link";
+import { NavHashLink } from "react-router-hash-link";
 import { NavLink, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -19,14 +19,6 @@ const Navbar = ({scrollToRef, scheduleRef, faqRef }) => {
   const handleClick = () => setClicked(!clicked);
   const toggleClass = () => setOpened(!opened);
 
-  const scrollto = (el) => {
-    window.scrollTo({
-      top: el?.offsetTop,
-      left: 0,
-      behavior: "smooth"
-    })
-    console.log(el);
-  }
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

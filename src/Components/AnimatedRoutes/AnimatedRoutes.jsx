@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "../../Pages/Home";
 import WebinarPage from "../../Pages/WebinarPage";
@@ -21,7 +21,6 @@ function AnimatedRoutes() {
 //         behavior: "smooth"
 //         })
 // }, [hash])
-
 
   return (
     <AnimatePresence>
