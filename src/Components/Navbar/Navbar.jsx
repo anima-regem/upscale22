@@ -7,8 +7,10 @@ import "../Navbar/Navbar.css";
 import logo from "../../assets/images/logo.svg";
 import { NavHashLink } from "react-router-hash-link";
 import { NavLink, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [clicked, setClicked] = useState(false);
   const [opened, setOpened] = useState(false);
   const [sticky, setSticky] = useState(false);
@@ -36,8 +38,8 @@ const Navbar = () => {
   return (
     <>
       <header className={sticky ? "sticky" : ""}>
-        <div className="logo">
-          <img src={logo} alt="upscale_logo" className="img_logo" />
+        <div className="logo" onClick={()=>navigate("/")}>
+            <img src={logo} alt="upscale_logo" className="img_logo"  />
         </div>
         <div
           className={

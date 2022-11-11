@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.css";
+import { useNavigate } from "react-router-dom";
 
 // logos
 import BigLogo from "../../assets/images/bigLogo.svg";
@@ -12,6 +13,7 @@ import Coundown from "../Coundown/Coundown";
 import Footer from "../Footer/Footer";
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <>
       <main>
@@ -22,7 +24,7 @@ const Banner = () => {
                 <img src={BigLogo} alt="Logo" />
               </div>
               <div className="banner_register_btn">
-                <button className="upscale_btn">Register</button>
+                <button className="upscale_btn" onClick={()=>navigate("/ticket")}>Register</button>
               </div>
               <div className="container">
                 <div className="row">
@@ -40,7 +42,7 @@ const Banner = () => {
                       a week long program.
                     </p>
                     <div className="learn_more_btn">
-                      <button className="upscale_btn">Learn more</button>
+                      <button className="upscale_btn" onClick={()=>navigate("/ticket")}>Learn more</button>
                     </div>
                   </div>
                   <div className="col-lg-12 banner_coundown">

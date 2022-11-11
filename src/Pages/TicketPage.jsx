@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
-import GrabTickets from "../components/GrabTickets/GrabTickets";
+import Footer from "../Components/Footer/Footer";
+import GrabTickets from "../Components/GrabTickets/GrabTickets";
 import Navbar from '../Components/Navbar/Navbar'
 
 const TicketPage = () => {
