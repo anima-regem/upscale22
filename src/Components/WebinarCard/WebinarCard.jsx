@@ -11,7 +11,8 @@ const WebinarCard = ({ image, heading1, heading2 }) => {
       <div className="webinar_card_section">
         <div>
           <div className="webinar_card_gradient"></div>
-          <LazyLoadImage effect="blur" placeholderSrc={placeholder} src={image} alt="webinar Image" />
+          <img src={image} alt="" />
+          {/* <LazyLoadImage effect="blur" placeholderSrc={placeholder} src={image} alt="webinar Image" /> */}
         </div>
         <h1>{heading1}</h1>
         <h2>{heading2}</h2>
