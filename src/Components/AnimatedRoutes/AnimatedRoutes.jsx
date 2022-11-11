@@ -11,6 +11,17 @@ import TicketPage from "../../Pages/TicketPage";
 
 function AnimatedRoutes() {
   const location = useLocation();
+//   const { hash } = useLocation()
+//   useEffect(() => {
+//     const targetElement = hash && document.getElementById(hash.substring(1));
+//     console.log(targetElement)
+//     window.scrollTo({
+//         top: targetElement?.offsetTop,
+//         left: 0,
+//         behavior: "smooth"
+//         })
+// }, [hash])
+
   return (
     <AnimatePresence>
       <ScrollToTop />
