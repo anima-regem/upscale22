@@ -1,6 +1,8 @@
-import React from 'react'
-import './Card.css'
-export default function Card({imgUrl, name, des, rounded}) {
+import React from "react";
+import "./Card.css";
+
+
+export default function Card({ imgUrl, name, des, rounded }) {
   return (
       <div className={rounded ? 'card__container rounded__card__container':'card__container non__rounded'}>
           <div className="card__img__container">
@@ -11,5 +13,5 @@ export default function Card({imgUrl, name, des, rounded}) {
               <h4 className='card__text sec__text'>  <div className="wrap__text">{ des } </div> </h4>
           </div>
     </div>
-  )
+  );
 }

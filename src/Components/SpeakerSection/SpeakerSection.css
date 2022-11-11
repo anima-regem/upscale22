@@ -1,5 +1,5 @@
 :root {
-    --speaker-header: #2CB774;
+    --speaker-header: #2cb774;
     --rounded-card-height: 19rem;
     --rounded-card-mobile-height: 8.4rem;
     --rounded-card-width: 14rem;
@@ -13,7 +13,7 @@
 }
 
 .speaker__section {
-    font-family: 'Gotham', sans-serif;
+    font-family: "Gotham", sans-serif;
     margin-bottom: 10rem;
 }
 
@@ -61,7 +61,6 @@
     margin-bottom: 3rem;
 }
 
-
 .blur1 {
     position: absolute;
     width: 640px;
@@ -88,7 +87,7 @@
     z-index: 0;
 }
 
-@media(max-width: 1738px) {
+@media (max-width: 1738px) {
     .speakers__mentors {
         padding: 4rem;
     }
@@ -166,7 +165,6 @@
 }
 
 @media (max-width: 896px) {
-
     .mentor__el:nth-child(odd) {
         margin-left: 0;
         width: initial;
@@ -235,6 +233,16 @@
     }
 }
 
+@media (max-width: 800px) {
+    .mentor__el:last-child {
+        transform: translateX(92%);
+        -webkit-transform: translateX(92%);
+        -moz-transform: translateX(92%);
+        -ms-transform: translateX(92%);
+        -o-transform: translateX(92%);
+    }
+}
+
 @media (max-width: 370px) {
     .speakers__container {
         gap: 1rem;
@@ -244,7 +252,6 @@
     .speaker__heading {
         font-size: 2.3rem;
     }
-
 }
 
 @media (max-width: 320px) {
@@ -280,5 +287,4 @@
     .speaker__heading {
         font-size: 2rem;
     }
-
 }

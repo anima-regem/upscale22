@@ -19,12 +19,13 @@
   grid-row: 1;
 }
 .Schedule > .hero-text > div {
-  background-color: #2cb77428;
-  border-radius: 60%;
+  background-color: #2cb77448;
+  padding: 12%;
+  position: absolute;
 
   grid-row: 1;
   grid-column: 1;
-  filter: blur(500px);
+  filter: blur(100px);
   z-index: 1;
 }
 

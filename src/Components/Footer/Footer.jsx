@@ -83,11 +83,12 @@ const Footer = () => {
         <section className="section footer__about">
           <h4 className="footer__heading">ABOUT IEEE SB GEC PKD</h4>
           <p className="footer__about__para">
-            The IEEE Student Branch of Government Engineering College Palakkad,
-            We work for providing an ideal platform for young minds to nourish
-            their technical skills as an engineer by providing a technical
-            home.The SB has has actively working IAS , ComSoc and Computer
-            Society and also WiE affinity group.
+            The IEEE Students branch of Government Engineering College
+            Palakkad,we work for providing an ideal platform for young minds to
+            nourish their technical skills as an engineer by providing a
+            technical home. The SB comprises actively working with an IAS,
+            ComSoc, and Computer Society and also the WiE affinity group in
+            association for achieving the objectives.
           </p>
         </section>
         <section className="section footer__end">
