@@ -10,9 +10,8 @@ import greenTicket from "../../assets/images/greenTicket.svg";
 import pinkTicket from "../../assets/images/pinkTicket.svg";
 import lightgreenTicket from "../../assets/images/lightgreenTicket.svg";
 
-
-
 const GrabTickets = () => {
+  let link = "https://www.yepdesk.com/open-register/636a901fc9e77c0001cb48fc";
   return (
     <div className="grab_ticket_section">
       <img className="grab_ticket_img" src={ticketImg} alt="" />
@@ -23,13 +22,27 @@ const GrabTickets = () => {
           <div className="ticket_blur"></div>
           <div className="row tickets_section">
             <div className="col-lg-6 col-md-6 col-sm-12 ticket">
-              <img className="full_width" src={greenTicket} alt="" />
+              <img
+                className="full_width"
+                src={greenTicket}
+                alt=""
+                onClick={() => (window.location.href = link)}
+              />
             </div>
             <div className="col-lg-6 col-md-6 col-12 ticket">
-              <img className="full_width" src={pinkTicket} alt="" />
+              <img
+                className="full_width"
+                src={pinkTicket}
+                alt=""
+                onClick={() => (window.location.href = link)}
+              />
             </div>
             <div className="col-lg-12 col-md-12 col-12 ticket">
-              <img  src={lightgreenTicket} alt="" />
+              <img
+                src={lightgreenTicket}
+                alt=""
+                onClick={() => (window.location.href = link)}
+              />
             </div>
           </div>
           {/* <img src={greenTicket} alt="" />
