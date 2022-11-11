@@ -2,6 +2,8 @@ import React from "react";
 import HeaderArrow from "../HeaderArrow/HeaderArrow";
 import "../Webinar/Webinar.css";
 import { Navigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { convertPngtoJpg } from "../../util/pngTojpg";
 
 const Webinar = ({ webinar, index, max }) => {
   if (webinar === undefined) return <Navigate to="/" />;
@@ -15,10 +17,13 @@ const Webinar = ({ webinar, index, max }) => {
           </div>
 
           <div className="col-lg-5 col-md-5 col-5 webinar_div">
-            <img
+            <LazyLoadImage
               className="webinar_img"
+              effect="blur"
+              placeholderSrc={`/blur/webinar_imgs/${convertPngtoJpg(webinar.img1)}`}
               src={webinar.img1}
               alt={webinar.desc2}
+              key={webinar.img1}
             />
             <div className="webinar_details">
               <h1>{webinar.heading2}</h1>

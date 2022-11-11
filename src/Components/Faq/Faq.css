@@ -1,5 +1,5 @@
 .faq {
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: "Gotham";
   background-color: black;
   color: white;
@@ -34,7 +34,7 @@
 
 @media (max-width: 700px) {
   .faq {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .faq_question,
@@ -53,7 +53,6 @@
   height: calc(var(--size) * 1.2);
   background-image: radial-gradient(rgb(44, 183, 116, 0.2) 0, transparent 70%);
   top: 0;
-  z-index: -1;
 }
 
 .faq_blob1 {

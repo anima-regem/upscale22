@@ -14,7 +14,7 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
       <ScrollToTop />
-      <Routes>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route
           path="/webinar/:id"

@@ -13,7 +13,7 @@ const PromoVideo = () => {
         <div className="video_player_section">
           <div className="player">
             <div className="comming_soon_video">
-              <h1>COMMING</h1>
+              <h1>COMING</h1>
               <h2>SOON...</h2>
             </div>
             {/* <ReactPlayer
