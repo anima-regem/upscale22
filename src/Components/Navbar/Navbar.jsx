@@ -75,7 +75,7 @@ const Navbar = () => {
               >
                 HOME
               </NavHashLink>
-              <Link className="navbar__nav__el" to="/know-more">
+              <Link className="navbar__nav__el" to="/about">
                 ABOUT
               </Link>
               <NavHashLink
@@ -90,7 +90,7 @@ const Navbar = () => {
               <NavLink
                 className="navbar__nav__el"
                 activeClassName="active_li"
-                to="/know-more"
+                to="/speakers"
               >
                 SPEAKERS
               </NavLink>

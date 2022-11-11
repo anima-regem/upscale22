@@ -3,11 +3,11 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const Faq = () => {
   return (
-    <Container className="faq py-4" id="faq">
+    <div className="container faq py-4" id="faq">
       <h1 className="faq_heading">
         FREQUENTLY ASKED <br /> <span className="faq_head">QUESTIONS?</span>
       </h1>
-      <Row>
+      <div className="row">
         <Question question="Who can participate in the event?" />
         <Answer
           answer="If you want to be a budding entrepreneur? then you ended up in the right place.
@@ -20,17 +20,17 @@ There are no certain criteria, those who are interested in entrepreneurship can 
         <Answer answer="Oopsy! There is no provision for a refund. But you'll avail the benefit of a refund in case you have registered yourself twice by some technical issues. The technical issues must be informed to the Upscale'22 team as soon as possible." />
         <Answer answer="From the introduction, webinar sessions and mock presentations will be online. The event will be conducted offline on the last day." />
         <Question question="Is it an offline or online event?" />
-      </Row>
+      </div>
       <div className="faq_blob1"></div>
       <div className="faq_blob2"></div>
       <div className="faq_blob3"></div>
-    </Container>
+    </div>
   );
 };
 
 const Question = ({ question }) => {
   return (
-    <Col className={`faq_question`} lg={6}>
+    <div className={`faq_question`} lg={6}>
       <h2 className="mt-4">Question</h2>
       <p>{question}</p>
     </div>

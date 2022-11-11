@@ -8,6 +8,7 @@ import Schedule from "../Components/schedule/Schedule";
 import WebinarSection from "../Components/WebinarSection/WebinarSection";
 import { motion } from "framer-motion";
 import useTop from "../helpers/ScrollToTop";
+import Speakers from "./Speakers";
 
 const Home = () => {
   useTop();
