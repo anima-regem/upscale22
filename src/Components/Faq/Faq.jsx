@@ -1,9 +1,9 @@
 import "./Faq.css";
 import { Col, Container, Row } from "react-bootstrap";
 
-const Faq = () => {
+const Faq = ( { faqRef }) => {
   return (
-    <div className="container faq py-3" id="faq">
+    <div className="container faq py-3" id="faq" ref={faqRef}>
       <h1 className="faq_heading">
         FREQUENTLY ASKED <br /> <span className="faq_head">QUESTIONS?</span>
       </h1>

@@ -1,15 +1,15 @@
 /*
-FIX:
-[] Incorrect scroll destination when clicked from another page.
+FIXME:
+[] Prevent rerendering when scrolled into from another page.
 */
 import React, { useEffect, useState } from "react";
 import "../Navbar/Navbar.css";
 import logo from "../../assets/images/logo.svg";
-import { NavHashLink } from "react-router-hash-link";
+import { NavHashLink, HashLink } from "react-router-hash-link";
 import { NavLink, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({scrollToRef, scheduleRef, faqRef }) => {
   const navigate = useNavigate();
   const [clicked, setClicked] = useState(false);
   const [opened, setOpened] = useState(false);
@@ -19,11 +19,14 @@ const Navbar = () => {
   const handleClick = () => setClicked(!clicked);
   const toggleClass = () => setOpened(!opened);
 
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -80;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-  };
+  const scrollto = (el) => {
+    window.scrollTo({
+      top: el?.offsetTop,
+      left: 0,
+      behavior: "smooth"
+    })
+    console.log(el);
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -80,15 +83,13 @@ const Navbar = () => {
               <Link className="navbar__nav__el" to="/about">
                 ABOUT
               </Link>
-              <NavHashLink
-                smooth
+              <NavLink
                 className="navbar__nav__el"
-                activeClassName="active_li"
                 to="/#schedule"
-                scroll={scrollWithOffset}
+                onClick={() => {scrollToRef(scheduleRef.current)}}
               >
                 SCHEDULE
-              </NavHashLink>
+              </NavLink>
               <NavLink
                 className="navbar__nav__el"
                 activeClassName="active_li"
@@ -99,20 +100,17 @@ const Navbar = () => {
               <NavHashLink
                 smooth
                 className="navbar__nav__el"
-                activeClassName="active_li"
                 to="#footer"
               >
                 CONTACT
               </NavHashLink>
-              <NavHashLink
-                smooth
+              <NavLink
                 className="navbar__nav__el mobile_only"
-                activeClassName="active_li"
                 to="/#faq"
-                scroll={scrollWithOffset}
+                onClick={() => {scrollToRef(faqRef.current)}}
               >
                 FAQ
-              </NavHashLink>
+              </NavLink>
               <NavHashLink
                 smooth
                 className="navbar__nav__el mobile_only"
