@@ -5,47 +5,46 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #000;
-    -webkit-font-smoothing: antialiased;
+  background-color: #000;
+  -webkit-font-smoothing: antialiased;
 }
 
 .upscale_btn {
   padding: 10px 25px;
   background: none;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    font-family: "Gotham", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 19px;
-    transition: .2s;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-family: "Gotham", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 19px;
+  transition: 0.2s;
 }
 
 .upscale_btn:hover {
-    background: #1ED760;
-    border: 2px solid #1ED760;
+  background: #1ed760;
+  border: 2px solid #1ed760;
 }
 
 @media (max-width: 430px) {
-    .upscale_btn {
-        font-size: 12px;
-        line-height: 11px;
-    }
+  .upscale_btn {
+    font-size: 12px;
+    line-height: 11px;
+  }
 }
 
 .App {
-    background-color: #000;
-
+  background-color: #000;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }

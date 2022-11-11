@@ -1,12 +1,12 @@
 import React from "react";
 import Footer from "../Components/Footer/Footer";
 import GrabTickets from "../Components/GrabTickets/GrabTickets";
-import Navbar from '../Components/Navbar/Navbar'
+import Navbar from "../Components/Navbar/Navbar";
 
 const TicketPage = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <GrabTickets />
       <Footer />
     </div>

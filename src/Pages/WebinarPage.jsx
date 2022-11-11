@@ -19,7 +19,7 @@ const WebinarPage = ({ webinars }) => {
     >
       <Navbar />
       <Webinar webinar={webinars[index]} index={index} max={webinars?.length} />
-      <Footer/>
+      <Footer />
     </motion.div>
   );
 };

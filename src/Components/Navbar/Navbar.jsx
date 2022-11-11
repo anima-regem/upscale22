@@ -38,8 +38,8 @@ const Navbar = () => {
   return (
     <>
       <header className={sticky ? "sticky" : ""}>
-        <div className="logo" onClick={()=>navigate("/")}>
-            <img src={logo} alt="upscale_logo" className="img_logo"  />
+        <div className="logo" onClick={() => navigate("/")}>
+          <img src={logo} alt="upscale_logo" className="img_logo" />
         </div>
         <div
           className={

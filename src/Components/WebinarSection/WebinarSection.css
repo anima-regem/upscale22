@@ -32,13 +32,13 @@
   margin-top: 20px;
 }
 
-.align_center{
+.align_center {
   display: flex;
   justify-content: center;
 }
 
 @media (max-width: 430px) {
-  .home_webinar_section{
+  .home_webinar_section {
     margin-top: 80px;
   }
   .webinar_heading_blur {
@@ -59,7 +59,7 @@
   .webinar_home_card_section > div {
     margin-top: 0;
   }
-  .right_align{
+  .right_align {
     display: block;
   }
 }

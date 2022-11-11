@@ -17,8 +17,8 @@ const KnowMoreComp = () => {
       <div id="aboutDesktop" className="row">
         <img src={aboutDesktop} alt="" />
       </div>
-        <div id="recallDesktop" className="row">
-          <img src={recallDesktop} alt="" />
+      <div id="recallDesktop" className="row">
+        <img src={recallDesktop} alt="" />
       </div>
     </div>
   );

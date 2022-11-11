@@ -62,9 +62,9 @@
   }
 }
 @media (max-width: 769px) {
-    .tickets{
-        margin-top: -100px;
-    }
+  .tickets {
+    margin-top: -100px;
+  }
   .tickets > h1 {
     font-size: 85px;
     line-height: 90px;
@@ -75,15 +75,15 @@
   }
 }
 @media (max-width: 632px) {
-    .tickets > h1 {
-      font-size: 65px;
-      line-height: 80px;
-    }
-    .tickets > p {
-      font-size: 16px;
-      line-height: 15px;
-    }
+  .tickets > h1 {
+    font-size: 65px;
+    line-height: 80px;
   }
+  .tickets > p {
+    font-size: 16px;
+    line-height: 15px;
+  }
+}
 
 @media (max-width: 430px) {
   .grab_ticket_img {
