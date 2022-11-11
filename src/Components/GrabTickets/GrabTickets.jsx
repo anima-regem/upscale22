@@ -6,6 +6,12 @@ import ticketImg from "../../assets/images/Eventprgression.svg";
 import ticketsImg from "../../assets/images/tickets.svg";
 import mobileTickets from "../../assets/images/mobileTickets.svg";
 
+import greenTicket from "../../assets/images/greenTicket.svg";
+import pinkTicket from "../../assets/images/pinkTicket.svg";
+import lightgreenTicket from "../../assets/images/lightgreenTicket.svg";
+
+
+
 const GrabTickets = () => {
   return (
     <div className="grab_ticket_section">
@@ -14,9 +20,25 @@ const GrabTickets = () => {
         <div className="container tickets">
           <h1>TICKETS</h1>
           <p>Choose the ticket</p>
-          <img className="ticket_desktop" src={ticketsImg} alt="" />
+          <div className="ticket_blur"></div>
+          <div className="row tickets_section">
+            <div className="col-lg-6 col-md-6 col-sm-12 ticket">
+              <img className="full_width" src={greenTicket} alt="" />
+            </div>
+            <div className="col-lg-6 col-md-6 col-12 ticket">
+              <img className="full_width" src={pinkTicket} alt="" />
+            </div>
+            <div className="col-lg-12 col-md-12 col-12 ticket">
+              <img  src={lightgreenTicket} alt="" />
+            </div>
+          </div>
+          {/* <img src={greenTicket} alt="" />
+            <img src={greenTicket} alt="" />
+            <img src={greenTicket} alt="" /> */}
+
+          {/* <img className="ticket_desktop" src={ticketsImg} alt="" /> */}
         </div>
-        <img className="ticket_mobile" src={mobileTickets} alt="" />
+        {/* <img className="ticket_mobile" src={mobileTickets} alt="" /> */}
       </section>
     </div>
   );
