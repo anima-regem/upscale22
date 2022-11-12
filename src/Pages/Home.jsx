@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Banner from "../Components/Banner/Banner";
 import Faq from "../Components/Faq/Faq";
 import Footer from "../Components/Footer/Footer";
@@ -9,15 +9,6 @@ import WebinarSection from "../Components/WebinarSection/WebinarSection";
 import { motion } from "framer-motion";
 
 const Home = () => {
-  const scheduleRef = useRef('schedule');
-  const faqRef = useRef('faq');
-  const scrollToRef = (ref) => {
-    window.scrollTo({
-      top: ref.offsetTop,
-      left: 0,
-      behavior: "smooth"
-    })
-  }
 
   return (
     <motion.div
@@ -27,12 +18,12 @@ const Home = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2, ease: "easeOut" }}
     >
-      <Navbar scrollToRef={scrollToRef} scheduleRef={ scheduleRef } faqRef={faqRef} />
+      <Navbar />
       <Banner />
-      <Schedule scheduleRef={ scheduleRef } />
+      <Schedule />
       <WebinarSection />
       <PromoVideo />
-      <Faq faqRef={ faqRef } />
+      <Faq />
       <Footer />
     </motion.div>
   );

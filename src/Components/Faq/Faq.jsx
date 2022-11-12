@@ -1,8 +1,8 @@
 import "./Faq.css";
 
-const Faq = ( { faqRef }) => {
+const Faq = () => {
   return (
-    <div className="container faq py-3" id="faq" ref={faqRef}>
+    <div className="container faq py-3" id="faq">
       <h1 className="faq_heading">
         FREQUENTLY ASKED <br /> <span className="faq_head">QUESTIONS?</span>
       </h1>
