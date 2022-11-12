@@ -8,6 +8,7 @@ import logo from "../../assets/images/logo.svg";
 import { NavHashLink } from "react-router-hash-link";
 import { NavLink, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { scroller } from 'react-scroll'
 
 const Navbar = ({scrollToRef, scheduleRef, faqRef }) => {
   const navigate = useNavigate();
@@ -78,7 +79,15 @@ const Navbar = ({scrollToRef, scheduleRef, faqRef }) => {
               <NavLink
                 className="navbar__nav__el"
                 to="/#schedule"
-                onClick={() => {scrollToRef(scheduleRef.current)}}
+                onClick={
+                  () => {
+                    setTimeout(() => {
+                    scroller.scrollTo('schedule', {
+                      duration:'100'
+                    })
+                  },200)
+                  }
+                }
               >
                 SCHEDULE
               </NavLink>
@@ -99,7 +108,16 @@ const Navbar = ({scrollToRef, scheduleRef, faqRef }) => {
               <NavLink
                 className="navbar__nav__el mobile_only"
                 to="/#faq"
-                onClick={() => {scrollToRef(faqRef.current)}}
+                // onClick={() => {scrollToRef(faqRef.current)}}
+                onClick={
+                  () => {
+                    setTimeout(() => {
+                    scroller.scrollTo('faq', {
+                      duration:'100'
+                    })
+                  },200)
+                  }
+                }
               >
                 FAQ
               </NavLink>
