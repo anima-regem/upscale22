@@ -66,7 +66,7 @@ const Footer = () => {
             </li>
             <li>
               <a className="footer__link" href="tel:+919895645290">
-                Thamna: +91 9895645290
+                Thamanna: +91 9895645290
               </a>
             </li>
             <li>
@@ -84,7 +84,7 @@ const Footer = () => {
           <h4 className="footer__heading">ABOUT IEEE SB GEC PKD</h4>
           <p className="footer__about__para">
             The IEEE Students branch of Government Engineering College
-            Palakkad,we work for providing an ideal platform for young minds to
+            Palakkad, work for providing an ideal platform for young minds to
             nourish their technical skills as an engineer by providing a
             technical home. The SB comprises actively working with an IAS,
             ComSoc, and Computer Society and also the WiE affinity group in
@@ -97,7 +97,7 @@ const Footer = () => {
             <a
               className="clip"
               onClick={() => {
-                copy("https://upscale22.vercel.app/");
+                copy("https://upscale22.live");
               }}
               data-copy-status={copyStatus}
             >

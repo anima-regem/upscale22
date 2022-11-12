@@ -139,6 +139,7 @@
     height: 88.41px;
   }
   .coundown_heading > h1 {
+    margin-top: 8px;
     font-size: 9.76442px;
     line-height: 9px;
   }

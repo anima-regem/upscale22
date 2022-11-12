@@ -139,6 +139,10 @@
     }
 }
 
+.no__scroll {
+    overflow-x: hidden;
+}
+
 @media (max-width: 896px) {
     .mentor__el:nth-child(odd) {
         margin-left: 0;

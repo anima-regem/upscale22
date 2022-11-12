@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 function SpeakerSection() {
   const navigate = useNavigate();
   return (
-    <div className="speakers__mentors">
+    <div className="speakers__mentors no__scroll">
       <section className="speaker__section">
         <h1 className="speaker__heading">
           Speakers

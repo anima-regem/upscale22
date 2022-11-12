@@ -24,6 +24,7 @@ function AnimatedRoutes() {
         <Route path="/about" element={<KnowMore />} />
         <Route path="/speakers" element={<Speakers />} />
         <Route path="/ticket" element={<TicketPage />} />
+        <Route path="/*" element={<Home />} />
       </Routes>
     </AnimatePresence>
   );

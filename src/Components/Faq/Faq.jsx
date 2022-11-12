@@ -9,7 +9,7 @@ const Faq = () => {
       <div className="row">
         <Question question="Who can participate in the event?" />
         <Answer
-          answer="If you want to be a budding entrepreneur? then you ended up in the right place.
+          answer="If you want to be a budding entrepreneur, then you ended up in the right place.
 There are no certain criteria, those who are interested in entrepreneurship can participate."
         />
         <Answer answer="Yes, there is an option only for individual enrollment. But once after enrolling you can participate individually or as a group as per your choice. We have provided the details of the registration fee packages declared." />
