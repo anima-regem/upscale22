@@ -1,15 +1,12 @@
-/*
-FIXME:
-[] Prevent rerendering when scrolled into from another page.
-*/
 import React, { useEffect, useState } from "react";
 import "../Navbar/Navbar.css";
 import logo from "../../assets/images/logo.svg";
 import { NavHashLink } from "react-router-hash-link";
 import { NavLink, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { scroller } from 'react-scroll'
 
-const Navbar = ({scrollToRef, scheduleRef, faqRef }) => {
+const Navbar = () => {
   const navigate = useNavigate();
   const [clicked, setClicked] = useState(false);
   const [opened, setOpened] = useState(false);
@@ -63,7 +60,6 @@ const Navbar = ({scrollToRef, scheduleRef, faqRef }) => {
         <nav className="navbar__container">
           <div className="navbar__link__container" data-visibility={clicked}>
             <div className=" items">
-              {/* TODO: Fix the issue active class is not applying when scrolled into.*/}
               <NavHashLink
                 smooth
                 className="navbar__nav__el"
@@ -78,7 +74,15 @@ const Navbar = ({scrollToRef, scheduleRef, faqRef }) => {
               <NavLink
                 className="navbar__nav__el"
                 to="/#schedule"
-                onClick={() => {scrollToRef(scheduleRef.current)}}
+                onClick={
+                  () => {
+                    setTimeout(() => {
+                    scroller.scrollTo('schedule', {
+                      duration:'100'
+                    })
+                  },200)
+                  }
+                }
               >
                 SCHEDULE
               </NavLink>
@@ -99,7 +103,15 @@ const Navbar = ({scrollToRef, scheduleRef, faqRef }) => {
               <NavLink
                 className="navbar__nav__el mobile_only"
                 to="/#faq"
-                onClick={() => {scrollToRef(faqRef.current)}}
+                onClick={
+                  () => {
+                    setTimeout(() => {
+                    scroller.scrollTo('faq', {
+                      duration:'100'
+                    })
+                  },200)
+                  }
+                }
               >
                 FAQ
               </NavLink>
