@@ -135,7 +135,7 @@
 
     .card__container {
         height: calc(var(--card-mobile-height) + 10rem);
-        width: calc(var(--card-mobile-width) -2rem);
+        width: calc(var(--card-mobile-width) - 2rem);
     }
 }
 
