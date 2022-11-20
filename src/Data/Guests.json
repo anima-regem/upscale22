@@ -1,0 +1,17 @@
+[
+    {
+        "img": "/guest_img/mini_ulanat.png",
+        "name": "Dr.Mini Ulanat",
+        "desc": "Chair IEEE Kerala Section"
+    },
+    {
+        "img": "/guest_img/kartik_parasuram.png",
+        "name": "Karthik Parasuram B",
+        "desc": "Director of Operations, Kerala Start Up Mission"
+    },
+    {
+        "img": "/guest_img/bergin_russel.png",
+        "name": "Bergin S Russel",
+        "desc": "Startup Enthusiast, Innovator, Story Teller, Entrepreneurship Evangelist"
+    }
+]
