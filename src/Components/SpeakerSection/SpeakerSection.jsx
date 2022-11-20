@@ -38,11 +38,11 @@ function SpeakerSection() {
           <div className="blur2"></div>
         </h1>
         <div className="mentors__container">
-        {/* {mentorData.map((mentor) => (
+        {mentorData.map((mentor) => (
           <div className="mentor__el mentor_1">
-            <Card imgUrl={mentor.img} name={mentor.name} rounded des={mentor.disc}></Card>
+            <Card imgUrl={mentor.img} name={mentor.name} des={mentor.disc}></Card>
           </div>
-          ))} */}
+          ))}
         </div>
       </section>
     </div>

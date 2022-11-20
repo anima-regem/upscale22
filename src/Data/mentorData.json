@@ -1,77 +1,22 @@
 [
     {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
+        "img": "/mentor_img/bibin_andrews.png",
+        "name": "Bibin Andrews",
+        "disc": "Firmware Architect & Edison Expert"
     },
     {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
+        "img": "/mentor_img/devaki_menon.png",
+        "name": "Devaki R Menon",
+        "disc": "CEO kacchapi, The business clinic"
     },
     {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
+        "img": "/mentor_img/gopan_govindan.png",
+        "name": "Gopangovindan",
+        "disc": "Learning development specialist subex"
     },
     {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
-    },
-    {
-        "img": "/webinar_imgs/harikrishnan.png",
-        "name": "Mentor",
-        "disc": "I am a mentor"
+        "img": "/mentor_img/abhai_krishna.png",
+        "name": "Abhi krishna Harikumar",
+        "disc": "Director of Torc infotech limited (Kakamassery,kochi)"
     }
 ]

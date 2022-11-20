@@ -1,10 +1,12 @@
 .ticket_mobile {
   display: none;
 }
+
 .grab_ticket_img {
   width: 100%;
   margin-top: -130px;
 }
+
 .tickets {
   margin-top: -270px;
   width: 100%;
@@ -12,7 +14,8 @@
   flex-direction: column;
   align-items: center;
 }
-.tickets > h1 {
+
+.tickets>h1 {
   font-family: "Gotham";
   font-style: normal;
   font-weight: 700;
@@ -20,7 +23,8 @@
   line-height: 133px;
   color: #2cb774;
 }
-.tickets > p {
+
+.tickets>p {
   font-family: "Gotham";
   font-style: italic;
   font-weight: 500;
@@ -38,13 +42,16 @@
   filter: blur(260px);
   z-index: -100;
 }
-.full_width{
+
+.full_width {
   width: 100%;
 }
+
 .ticket {
   display: flex;
   justify-content: center;
   margin-top: 125px;
+  cursor: pointer;
 }
 
 .ticket_desktop {
@@ -52,59 +59,82 @@
   width: 100%;
 }
 
+.row {
+  --bs-gutter-x: 2.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
 @media (max-width: 1025px) {
   .grab_ticket_img {
     margin-top: -30px;
   }
+
   .tickets {
     margin-top: -140px;
   }
 }
+
 @media (max-width: 993px) {
   .grab_ticket_img {
     margin-top: -30px;
   }
+
   .tickets {
     margin-top: -140px;
   }
+
   .ticket_desktop {
     margin-top: -90px;
     width: 100%;
   }
-  .tickets > h1 {
+
+  .tickets>h1 {
     font-size: 100px;
     line-height: 133px;
   }
-  .tickets > p {
+
+  .tickets>p {
     font-size: 20px;
     line-height: 19px;
   }
 }
+
 @media (max-width: 769px) {
-  .ticket{
+  .ticket {
     margin-top: 60px;
   }
-  .ticket > img {
+
+  .ticket>img {
     width: 90%;
   }
+
   .tickets {
     margin-top: -100px;
   }
-  .tickets > h1 {
+
+  .tickets>h1 {
     font-size: 85px;
     line-height: 90px;
   }
-  .tickets > p {
+
+  .tickets>p {
     font-size: 18px;
     line-height: 15px;
   }
 }
+
 @media (max-width: 632px) {
-  .tickets > h1 {
+  .tickets>h1 {
     font-size: 65px;
     line-height: 80px;
   }
-  .tickets > p {
+
+  .tickets>p {
     font-size: 16px;
     line-height: 15px;
   }
@@ -120,9 +150,11 @@
     filter: blur(110px);
     z-index: -1;
   }
-  .ticket > img {
+
+  .ticket>img {
     width: 80%;
   }
+
   .ticket {
     margin-top: 20px;
   }
@@ -130,22 +162,27 @@
   .grab_ticket_img {
     margin-top: -20px;
   }
+
   .tickets {
     margin-top: -50px;
   }
-  .tickets > h1 {
+
+  .tickets>h1 {
     font-size: 33.5241px;
     line-height: 37px;
   }
-  .tickets > p {
+
+  .tickets>p {
     font-size: 20px;
     line-height: 19px;
   }
+
   .ticket_desktop {
     display: none;
     margin-top: -60px;
     width: 100%;
   }
+
   .ticket_mobile {
     display: block;
     width: 100%;

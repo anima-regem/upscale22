@@ -5,7 +5,7 @@ import HeaderArrow from "../HeaderArrow/HeaderArrow";
 import ticketImg from "../../assets/images/Eventprgression.svg";
 import ticketsImg from "../../assets/images/tickets.svg";
 import mobileTickets from "../../assets/images/mobileTickets.svg";
-
+import { motion } from "framer-motion";
 import greenTicket from "../../assets/images/greenTicket.svg";
 import pinkTicket from "../../assets/images/pinkTicket.svg";
 import lightgreenTicket from "../../assets/images/lightgreenTicket.svg";
@@ -22,26 +22,29 @@ const GrabTickets = () => {
           <div className="ticket_blur"></div>
           <div className="row tickets_section">
             <div className="col-lg-6 col-md-6 col-sm-12 ticket">
-              <img
+              <motion.img
                 className="full_width"
                 src={greenTicket}
                 alt=""
                 onClick={() => (window.location.href = link)}
+                whileHover={{ scale: 1.1 }}
               />
             </div>
             <div className="col-lg-6 col-md-6 col-12 ticket">
-              <img
+              <motion.img
                 className="full_width"
                 src={pinkTicket}
                 alt=""
                 onClick={() => (window.location.href = link)}
+                whileHover={{ scale: 1.1 }}
               />
             </div>
             <div className="col-lg-12 col-md-12 col-12 ticket">
-              <img
+              <motion.img
                 src={lightgreenTicket}
                 alt=""
                 onClick={() => (window.location.href = link)}
+                whileHover={{ scale: 1.1 }}
               />
             </div>
           </div>
