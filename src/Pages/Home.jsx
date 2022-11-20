@@ -6,6 +6,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import PromoVideo from "../Components/PromoVideo/PromoVideo";
 import Schedule from "../Components/schedule/Schedule";
 import WebinarSection from "../Components/WebinarSection/WebinarSection";
+import GuestSection from "../Components/GuestSection/GuestSection";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       <Banner />
       <Schedule />
       <WebinarSection />
+      <GuestSection />
       <PromoVideo />
       <Faq />
       <Footer />
