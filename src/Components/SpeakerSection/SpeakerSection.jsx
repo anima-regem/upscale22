@@ -40,7 +40,7 @@ function SpeakerSection() {
         <div className="mentors__container">
         {mentorData.map((mentor) => (
           <div className="mentor__el mentor_1">
-            <Card imgUrl={mentor.img} name={mentor.name} des={mentor.disc}></Card>
+            <Card imgUrl={mentor.img} name={mentor.name} des={mentor.desc} rounded></Card>
           </div>
           ))}
         </div>

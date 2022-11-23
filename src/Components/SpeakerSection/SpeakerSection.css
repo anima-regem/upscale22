@@ -42,13 +42,22 @@
 
 .mentors__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     justify-items: center;
-    row-gap: 3rem;
+    row-gap: 5rem;
     margin-top: 4rem;
     margin-bottom: 3rem;
+}
+
+.mentor__el:nth-child(1),
+.mentor__el:nth-child(4) {
+    justify-self: end;
+}
+.mentor__el:nth-child(3),
+.mentor__el:nth-child(6) {
+    justify-self: start;
 }
 
 .blur1 {
@@ -77,24 +86,13 @@
     z-index: 0;
 }
 
+.no__scroll {
+    overflow-x: hidden;
+}
+
 @media (max-width: 1738px) {
     .speakers__mentors {
         padding: 4rem;
-    }
-}
-
-@media (max-width: 1418px) {
-    .mentors__container {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 6rem;
-    }
-
-    .mentor__el:nth-child(odd) {
-        justify-self: end;
-    }
-
-    .mentor__el:nth-child(even) {
-        justify-self: start;
     }
 }
 
@@ -110,7 +108,28 @@
     .speaker__el:last-child {
         grid-column: 2/3;
     }
+}
 
+@media (max-width: 1418px) {
+    .mentors__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 6rem;
+    }
+}
+
+@media (max-width: 1208px) {
+    .mentors__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
+    }
+    .mentor__el:nth-child(1),
+    .mentor__el:nth-child(4) {
+        justify-self: center;
+    }
+    .mentor__el:nth-child(3),
+    .mentor__el:nth-child(6) {
+        justify-self: center;
+    }
 }
 
 @media (max-width: 1104px) {
@@ -142,10 +161,7 @@
         height: calc(var(--card-mobile-height) + 10rem);
         width: calc(var(--card-mobile-width) - 2rem);
     }
-}
 
-.no__scroll {
-    overflow-x: hidden;
 }
 
 @media (max-width: 896px) {
@@ -177,6 +193,8 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
         margin-top: 0;
+        row-gap: 2rem;
+        margin-bottom: 0.3rem;
     }
 
     .mentor__el:nth-child(odd) {
@@ -228,6 +246,7 @@
     .mentors__container {
         grid-template-columns: auto;
         justify-content: center;
+        row-gap: 2rem;
     }
 
     .speaker__el:last-child,
