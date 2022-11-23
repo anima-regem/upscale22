@@ -2,21 +2,31 @@
     {
         "img": "/mentor_img/bibin_andrews.png",
         "name": "Bibin Andrews",
-        "disc": "Firmware Architect & Edison Expert"
+        "desc": "Firmware Architect & Edison Expert"
     },
     {
         "img": "/mentor_img/devaki_menon.png",
         "name": "Devaki R Menon",
-        "disc": "CEO Kacchapi, The Business Clinic"
+        "desc": "CEO Kacchapi, The Business Clinic"
     },
     {
         "img": "/mentor_img/gopan_govindan.png",
         "name": "Gopan Govindan",
-        "disc": "Learning & Development Specialist, Subex"
+        "desc": "Learning & Development Specialist, Subex"
     },
     {
         "img": "/mentor_img/abhai_krishna.png",
         "name": "Abhi krishna Harikumar",
-        "disc": "Director of Torc Infotech Ltd. (Kakamassery, Kochi)"
+        "desc": "Director of Torc Infotech Ltd. (Kakamassery, Kochi)"
+    },
+    {
+        "img": "/mentor_img/madiha_ahmed.png",
+        "name": "Ms.Madiha Ahmed",
+        "desc": "Co-founder, ASK Allied Health Services"
+    },
+    {
+        "img": "/mentor_img/bilina_sandeep.png",
+        "name": "Bilina Sandeep",
+        "desc": "CEO and Managing Director -Built Market Lab"
     }
 ]
