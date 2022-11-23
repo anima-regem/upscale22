@@ -51,6 +51,15 @@
     margin-bottom: 3rem;
 }
 
+.mentor__el:nth-child(1),
+.mentor__el:nth-child(4) {
+    justify-self: end;
+}
+.mentor__el:nth-child(3),
+.mentor__el:nth-child(6) {
+    justify-self: start;
+}
+
 .blur1 {
     position: absolute;
     width: 640px;
@@ -99,7 +108,6 @@
     .speaker__el:last-child {
         grid-column: 2/3;
     }
-
 }
 
 @media (max-width: 1418px) {
@@ -107,20 +115,20 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 6rem;
     }
-
-    /* .mentor__el:nth-child(odd) {
-        justify-self: end;
-    }
-
-    .mentor__el:nth-child(even) {
-        justify-self: start;
-    } */
 }
 
 @media (max-width: 1208px) {
     .mentors__container {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 0;
+    }
+    .mentor__el:nth-child(1),
+    .mentor__el:nth-child(4) {
+        justify-self: center;
+    }
+    .mentor__el:nth-child(3),
+    .mentor__el:nth-child(6) {
+        justify-self: center;
     }
 }
 

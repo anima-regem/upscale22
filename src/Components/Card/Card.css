@@ -20,11 +20,10 @@
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
     padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
 
 .rounded__card__container {
-    /*height: 19rem;*/
     width: 20rem;
 }
 
@@ -37,7 +36,7 @@
 }
 
 .wrap__text {
-    /*width: 64%;*/
+    --width: 64%;
 }
 
 .img__rounded {
