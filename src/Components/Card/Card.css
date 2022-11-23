@@ -24,8 +24,8 @@
 }
 
 .rounded__card__container {
-    height: 19rem;
-    width: 14rem;
+    /*height: 19rem;*/
+    width: 20rem;
 }
 
 .card__img__container {
@@ -37,7 +37,7 @@
 }
 
 .wrap__text {
-    width: 64%;
+    /*width: 64%;*/
 }
 
 .img__rounded {
@@ -93,6 +93,11 @@
         width: calc(var(--card-mobile-width) + 7rem);
     }
 
+    .rounded__card__container {
+        height: calc(var(--card-mobile-height) + 13.3rem);
+        width: calc(var(--card-mobile-width) + 7rem);
+    }
+
     .card__img__container {
         height: 13.8rem;
         flex-shrink: 0;
@@ -135,8 +140,8 @@
     }
 
     .rounded__card__container {
-        width: initial;
-        height: initial;
+        height: calc(var(--card-mobile-height) + 6.3rem);
+        width: calc(var(--card-mobile-width) + 2rem);
     }
 
 }
@@ -162,9 +167,16 @@
 }
 
 @media (max-width: 370px) {
+
+
     .card__container {
         height: calc(var(--card-mobile-height) + 1rem);
         width: calc(var(--card-mobile-width) - 1rem);
+    }
+
+    .rounded__card__container {
+        height: calc(var(--card-mobile-height) + 3rem);
+        width: calc(var(--card-mobile-width) - 0.7rem);
     }
 
     .non__rounded {
@@ -184,7 +196,7 @@
     }
 
     .rounded__card__container {
-        height: calc(var(--card-mobile-height) + 2rem);
+        height: calc(var(--card-mobile-height) + 3rem);
         width: calc(var(--card-mobile-width) + 0.2rem);
     }
 
