@@ -193,6 +193,8 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
         margin-top: 0;
+        row-gap: 2rem;
+        margin-bottom: 0.3rem;
     }
 
     .mentor__el:nth-child(odd) {
@@ -244,6 +246,7 @@
     .mentors__container {
         grid-template-columns: auto;
         justify-content: center;
+        row-gap: 2rem;
     }
 
     .speaker__el:last-child,
